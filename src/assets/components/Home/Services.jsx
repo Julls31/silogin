@@ -17,8 +17,8 @@ function Services() {
 
         {/* Content Section with Background */}
         <section
-          className="py-12 bg-cover bg-center rounded-lg"
-          style={{ backgroundImage: "url(/image/table_bg.png)", paddingTop: "6rem", paddingBottom: "6rem", paddingLeft:"2rem", paddingRight:"2rem" }}
+          className="bg-cover bg-center rounded-lg py-0 px-0 md:py-24 md:px-8"
+          style={{ backgroundImage: "url(/image/table_bg.png)" }}
         >
           {/* Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -28,10 +28,10 @@ function Services() {
                 <h3 className="text-xl font-semibold text-gray-700">
                   ASURANSI <span className="text-red-600">KARGO</span>
                 </h3>
-                <p className="text-gray-600 text-sm mt-4">
-                  Jenis asuransi yang dirancang untuk melindungi pengirim dan/atau
-                  penerima barang dari risiko kerugian atau kerusakan pada barang
-                  yang dikirim.
+                <p className="text-gray-600 mt-4">
+                  Jenis asuransi yang dirancang untuk melindungi pengirim
+                  dan/atau penerima barang dari risiko kerugian atau kerusakan
+                  pada barang yang dikirim.
                 </p>
               </div>
               <img
@@ -47,7 +47,7 @@ function Services() {
                 <h3 className="text-xl font-semibold text-gray-700">
                   ASURANSI <span className="text-red-600">BARANG</span>
                 </h3>
-                <p className="text-gray-600 text-sm mt-4">
+                <p className="text-gray-600 mt-4 w-[90%]">
                   Jenis asuransi yang melindungi pemilik barang dari risiko
                   kerugian atau kerusakan pada barang tersebut.
                 </p>
@@ -65,10 +65,10 @@ function Services() {
                 <h3 className="text-xl font-semibold text-gray-700">
                   ASURANSI <span className="text-red-600">GARANSI</span>
                 </h3>
-                <p className="text-gray-600 text-sm mt-4">
+                <p className="text-gray-600 mt-4 w-[90%]">
                   Jenis asuransi yang menawarkan perlindungan finansial kepada
-                  konsumen atas kerugian atau kerusakan pada barang atau jasa yang
-                  dibeli.
+                  konsumen atas kerugian atau kerusakan pada barang atau jasa
+                  yang dibeli.
                 </p>
               </div>
               <img
@@ -84,7 +84,7 @@ function Services() {
                 <h3 className="text-xl font-semibold text-gray-700">
                   KEMUDAHAN <span className="text-red-600">KLAIM</span>
                 </h3>
-                <p className="text-gray-600 text-sm mt-4">
+                <p className="text-gray-600 mt-4">
                   Proses pengajuan klaim asuransi yang mudah, cepat dan efisien,
                   menggunakan SILOGIN.
                 </p>

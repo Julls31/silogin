@@ -16,8 +16,8 @@ function About() {
 
         {/* Konten dengan background */}
         <section
-          className="py-12 bg-cover bg-center rounded-lg"
-          style={{ backgroundImage: "url(/image/table_bg.png)", paddingTop: "6rem", paddingBottom: "6rem", paddingLeft:"2rem", paddingRight:"2rem" }}
+          className="bg-cover bg-center rounded-lg py-0 px-0 md:py-24 md:px-8"
+          style={{ backgroundImage: "url(/image/table_bg.png)" }}
         >
           {/* Content */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-base-200">
@@ -27,7 +27,6 @@ function About() {
                 src="/image/siLoginTagline.png"
                 alt="SiLogin Tagline"
                 className="w-full max-w-md mx-auto"
-                
               />
             </div>
 
