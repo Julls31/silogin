@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./assets/layout/Navbar";
 import Footer from "./assets/layout/Footer";
@@ -23,18 +23,19 @@ function App() {
               </div>
               <div className="max-w-screen-xl mx-auto px-4">
                 <Routes>
-                  <Route path="/" element={<Home />}  />
+                  <Route path="/" element={<Home />} />
                   <Route path="/about" />
-                  <Route path="/services"  />
+                  <Route path="/services" />
                   <Route path="/contact" />
                   <Route path="/privacy-policy" element={<Privacy />} />
-                  <Route path="/terms-and-conditions" element={<TermAndCondition />} />
+                  <Route
+                    path="/terms-and-conditions"
+                    element={<TermAndCondition />}
+                  />
                 </Routes>
               </div>
-              <div className="w-full bg-base-200 px-4">
-                <div className="max-w-screen-xl mx-auto">
-                  <Footer />
-                </div>
+              <div className="max-w-screen-xl mx-auto">
+                <Footer />
               </div>
             </>
           }
@@ -44,4 +45,4 @@ function App() {
   );
 }
 
-export default App
+export default App;

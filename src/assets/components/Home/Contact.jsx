@@ -3,7 +3,7 @@ import React from "react";
 function Contact() {
   return (
     <>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 py-4">
         <div className="bg-base-200 lg:p-8 pt-8 rounded-lg">
           {/* Header */}
           <div className="text-center mb-12">
@@ -90,7 +90,7 @@ function Contact() {
               ))}
             </div>
           </section>
-          <div className="flex justify-center mt-8 lg;mt-4">
+          <div className="flex justify-center mt-8 lg:mt-4">
             <button className="btn btn-primary rounded-3xl">
               <i className="fa fa-arrow-right" />
               Ke website siLogin

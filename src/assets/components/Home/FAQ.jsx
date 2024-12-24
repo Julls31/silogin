@@ -32,18 +32,18 @@ function FAQ() {
           </h1>
         </div>
 
-        {/* FAQ Section */}
-        <div className="relative flex lg:gap-8">
+        {/* Desktop Layout */}
+        <div className="hidden lg:flex relative gap-8">
           {/* Questions Card */}
           <div
-            className="bg-white shadow-lg p-6 rounded-lg w-full lg:w-1/2 h-[370px] overflow-y-auto relative z-10 my-4"
+            className="bg-white shadow-lg p-6 rounded-lg w-full lg:w-1/2 h-full overflow-y-auto relative z-10 mt-28 transform transition-all duration-500 ease-in-out"
             style={{ transform: "translateX(6rem)" }}
           >
             <ul>
               {questions.map((question, index) => (
                 <li
                   key={index}
-                  className={`p-4 mb-2 flex items-center justify-between rounded-lg cursor-pointer ${
+                  className={`p-4 mb-2 flex items-center justify-between rounded-lg cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 ${
                     activeQuestion === index
                       ? "bg-red-100 text-red-500"
                       : "bg-gray-100 text-gray-600"
@@ -68,7 +68,7 @@ function FAQ() {
                       activeQuestion === index
                         ? "text-red-500"
                         : "text-gray-400"
-                    }`}
+                    } transition-transform duration-300 ease-in-out transform`}
                   >
                     &gt;
                   </span>
@@ -78,12 +78,54 @@ function FAQ() {
           </div>
 
           {/* Answers Card */}
-          <div className="bg-gray-100 shadow-lg p-8 pl-24 rounded-lg w-full lg:w-1/2 min-h-[400px]">
-            <h3 className="text-xl font-semibold text-gray-600 mb-4">
-              {activeQuestion + 1}. {questions[activeQuestion]}
-            </h3>
-            <p className="text-gray-500">{answers[activeQuestion]}</p>
-          </div>
+          <section
+            className="bg-cover bg-center rounded-lg py-0 px-0 md:py-24 md:px-8"
+            style={{ backgroundImage: "url(/image/table_bg.png)" }}
+          >
+            <div
+              className={`bg-gray-100 shadow-lg p-8 pl-20 rounded-lg w-full lg:w-[500px] min-h-[440px] -mt-4 transition-opacity duration-500 ease-in-out transform ${
+                activeQuestion === null
+                  ? "opacity-0 translate-y-8"
+                  : "opacity-100 translate-y-0"
+              }`}
+            >
+              <h3 className="text-xl font-semibold text-gray-600 mb-4">
+                {activeQuestion + 1}. {questions[activeQuestion]}
+              </h3>
+              <p className="text-gray-500">{answers[activeQuestion]}</p>
+            </div>
+          </section>
+        </div>
+
+        {/* Mobile Layout */}
+        <div className="lg:hidden">
+          {questions.map((question, index) => (
+            <div
+              key={index}
+              className="collapse collapse-arrow border border-gray-200 bg-gray-100 rounded-lg mb-2"
+            >
+              <input
+                type="checkbox"
+                checked={activeQuestion === index}
+                onChange={() =>
+                  setActiveQuestion(activeQuestion === index ? -1 : index)
+                }
+              />
+              <div className="collapse-title text-lg font-medium flex items-center gap-2">
+                <i
+                  className={`fa fa-circle ${
+                    activeQuestion === index
+                      ? "text-red-500"
+                      : "text-red-300"
+                  }`}
+                />
+                {question}
+              </div>
+              <div className="collapse-content">
+                <p className="text-gray-500">{answers[index]}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

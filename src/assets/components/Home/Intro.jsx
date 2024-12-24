@@ -2,7 +2,7 @@ import React from "react";
 
 function Intro() {
   return (
-    <section className="container mx-auto py-12 px-6 lg:px-0">
+    <section className="container mx-auto pt-12 px-6 lg:px-0">
       <div className="flex flex-col lg:flex-row items-center justify-between">
         {/* Gambar Kiri */}
         <div className="hidden lg:block w-1/3">
@@ -28,8 +28,8 @@ function Intro() {
             <button className="btn btn-primary rounded-3xl">
               <i className="fa fa-arrow-right"/> Get Started
             </button>
-            <button className="btn btn-outline btn-primary rounded-3xl">
-              <i className="fa-regular fa-circle-play text-lg" />View Demo
+            <button className="btn btn-outline rounded-3xl border-[#DB1F26] text-[#DB1F26] hover:text-[#DB1F26] hover:bg-[#f0f4f7] hover:border-[#DB1F26]">
+            <i className="fa-regular fa-circle-play text-lg" />View Demo
             </button>
           </div>
         </div>
