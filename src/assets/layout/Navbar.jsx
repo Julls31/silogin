@@ -1,13 +1,26 @@
 import React, { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false); // State untuk toggle menu
+  const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   // Function untuk handle scrolling
-  const handleScroll = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "start" });
+  const handleScroll = (id, path) => {
+    if (location.pathname !== path) {
+      navigate(path);
+      setTimeout(() => {
+        const section = document.getElementById(id);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 100); // Delay untuk memastikan halaman sudah berpindah
+    } else {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     }
   };
 
@@ -15,7 +28,11 @@ function Navbar() {
     <nav className="bg-white fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
-        <a href="/" className="flex items-center">
+        <a
+          href="#"
+          onClick={() => handleScroll("home", "/")}
+          className="flex items-center"
+        >
           <img src="/image/logo1.png" alt="logo" className="w-auto" />
         </a>
 
@@ -47,19 +64,19 @@ function Navbar() {
           } lg:flex lg:items-center lg:space-x-6 w-full lg:w-auto absolute lg:relative bg-white lg:bg-transparent top-16 left-0 lg:top-auto lg:left-auto px-6 py-4 lg:p-0`}
         >
           <button
-            onClick={() => handleScroll("about")}
+            onClick={() => handleScroll("about", "/")}
             className="block lg:inline-block text-gray-600 hover:text-black py-2"
           >
             About
           </button>
           <button
-            onClick={() => handleScroll("services")}
+            onClick={() => handleScroll("services", "/")}
             className="block lg:inline-block text-gray-600 hover:text-black py-2"
           >
             Services
           </button>
           <button
-            onClick={() => handleScroll("contact")}
+            onClick={() => handleScroll("contact", "/")}
             className="block lg:inline-block text-gray-600 hover:text-black py-2"
           >
             Contact

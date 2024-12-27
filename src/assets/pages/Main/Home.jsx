@@ -9,8 +9,8 @@ import ContactUs from "../../components/ContactUs";
 function Home() {
   return (
     <>
-      <div className="bg-base-100">
-        <div className="max-w-screen-xl mx-auto px-4 mt-10 -mb-10">
+      <div id="home" className="bg-base-100">
+        <div className="max-w-screen-xl mx-auto px-4 mt-10 lg:-mb-10">
           <Intro />
         </div>
       </div>
@@ -35,7 +35,7 @@ function Home() {
         </div>
       </div>
       <div className="bg-base-200">
-        <div className="max-w-screen-lg mx-auto px-4 my-10">
+        <div className="max-w-screen-lg mx-auto my-10">
           <ContactUs />
         </div>
       </div>
