@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 function Navbar() {
@@ -24,6 +24,24 @@ function Navbar() {
     }
   };
 
+  // Close menu jika user klik di luar menu
+  const handleOutsideClick = (e) => {
+    if (
+      isOpen &&
+      !e.target.closest(".mobile-menu") &&
+      !e.target.closest(".toggle-button")
+    ) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleOutsideClick);
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, [isOpen]);
+
   return (
     <nav className="bg-white fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
@@ -38,7 +56,7 @@ function Navbar() {
 
         {/* Toggle Button for Mobile */}
         <button
-          className="lg:hidden text-gray-700 focus:outline-none"
+          className="toggle-button lg:hidden text-gray-700 focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
           <svg
@@ -59,9 +77,11 @@ function Navbar() {
 
         {/* Navigation Links */}
         <div
-          className={`${
-            isOpen ? "block" : "hidden"
-          } lg:flex lg:items-center lg:space-x-6 w-full lg:w-auto absolute lg:relative bg-white lg:bg-transparent top-16 left-0 lg:top-auto lg:left-auto px-6 py-4 lg:p-0`}
+          className={`mobile-menu transition-all duration-300 ease-in-out ${
+            isOpen
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 -translate-y-5 pointer-events-none"
+          } lg:opacity-100 lg:translate-y-0 lg:pointer-events-auto lg:flex lg:items-center lg:space-x-6 w-full lg:w-auto absolute lg:relative bg-white lg:bg-transparent top-16 left-0 lg:top-auto lg:left-auto px-6 py-4 lg:p-0`}
         >
           <button
             onClick={() => handleScroll("about", "/")}

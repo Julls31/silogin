@@ -9,7 +9,7 @@ function About() {
           <h2 className="text-lg font-semibold text-gray-500 uppercase mb-8 tracking-wide">
             About Us
           </h2>
-          <h1 className="text-3xl font-semibold text-gray-600">
+          <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600">
             Apa Itu <span className="text-red-600">SILOGIN</span> ?
           </h1>
         </div>
@@ -26,7 +26,7 @@ function About() {
               <img
                 src="/image/siLoginTagline.png"
                 alt="SiLogin Tagline"
-                className="w-full max-w-md mx-auto"
+                className="w-full max-w-md mx-auto px-4 lg:px-0"
               />
             </div>
 

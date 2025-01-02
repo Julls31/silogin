@@ -27,7 +27,7 @@ function FAQ() {
           <h2 className="text-lg font-semibold text-gray-500 uppercase mb-8 tracking-wide">
             Case Studies
           </h2>
-          <h1 className="text-3xl font-semibold text-gray-600 mt-2">
+          <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600 mt-2">
             Beberapa pertanyaan yang sering ditanyakan
           </h1>
         </div>

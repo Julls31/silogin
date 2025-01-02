@@ -1,24 +1,34 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 function Footer() {
+  const navigate = useNavigate();
+
+  const handleScrollToTop = (path) => {
+    // Navigasi ke rute yang sesuai
+    navigate(path);
+
+    // Animasi scroll ke atas
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer className="bg-base-200 text-base-content py-10">
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap justify-between items-start">
+        {/* Centered Logo and Social Media */}
+        <div className="flex flex-col items-center space-y-6">
           {/* Logo */}
-          <div className="mb-6">
-            <img
-              src="/image/logo1.png"
-              alt="Logo"
-              className="w-32 h-auto"
-            />
+          <div>
+            <img src="/image/siLoginTagline.png" alt="Logo" className="w-48 h-auto" />
           </div>
 
           {/* Social Media */}
-           {/* Social Media */}
-           <div className="flex flex-col items-center">
+          <div className="text-center">
             <h6 className="text-lg font-bold mb-4">Follow Us</h6>
-            <div className="flex space-x-6 text-2xl">
+            <div className="flex justify-center space-x-6 text-2xl">
               <a
                 href="https://facebook.com"
                 target="_blank"
@@ -31,9 +41,9 @@ function Footer() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-blue-400 transition duration-200"
+                className="hover:text-gray-700 transition duration-200"
               >
-                <i className="fab fa-twitter"></i>
+                <i className="fab fa-x-twitter"></i>
               </a>
               <a
                 href="https://instagram.com"
@@ -53,32 +63,28 @@ function Footer() {
               </a>
             </div>
           </div>
-
-          {/* Legal Links */}
-          <div className="mb-6">
-            <h6 className="text-lg font-bold mb-2">Legal</h6>
-            <nav className="flex flex-col space-y-2">
-              <a
-                href="/terms-and-conditions"
-                className="link link-hover"
-              >
-                Terms & Conditions
-              </a>
-              <a
-                href="/privacy-policy"
-                className="link link-hover"
-              >
-                Privacy Policy
-              </a>
-            </nav>
-          </div>
         </div>
 
-        {/* Footer Bottom */}
+        {/* Footer Bottom with Legal Links and Copyright */}
         <div className="border-t border-gray-300 pt-4 mt-6 text-center">
           <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} siLogin All rights reserved.
+            © {new Date().getFullYear()} siLogin. All rights reserved.
           </p>
+          <nav className="mt-2 space-x-4">
+            <button
+              onClick={() => handleScrollToTop("/terms-and-conditions")}
+              className="text-gray-500 hover:text-red-500 focus:outline-none"
+            >
+              Terms & Conditions
+            </button>
+            <span className="text-gray-500">•</span>
+            <button
+              onClick={() => handleScrollToTop("/privacy-policy")}
+              className="text-gray-500 hover:text-red-500 focus:outline-none"
+            >
+              Privacy Policy
+            </button>
+          </nav>
         </div>
       </div>
     </footer>

@@ -34,8 +34,10 @@ function App() {
                   />
                 </Routes>
               </div>
-              <div className="max-w-screen-xl mx-auto px-4">
-                <Footer />
+              <div className="bg-base-200">
+                <div className="max-w-screen-xl mx-auto px-4">
+                  <Footer />
+                </div>
               </div>
             </>
           }

@@ -9,7 +9,7 @@ function ContactUs() {
       >
         <div className="bg-base-200 lg:p-8 pt-8 rounded-lg text-center">
           {/* Heading */}
-          <h1 className="text-2xl font-medium text-gray-800">
+          <h1 className="text-2xl lg:text-3xl font-medium text-gray-800">
             Tingkatkan pengalaman pelanggan <br /> Anda hari ini.
           </h1>
 

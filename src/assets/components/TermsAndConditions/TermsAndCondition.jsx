@@ -3,7 +3,7 @@ import React from "react";
 function TermsAndConditions() {
   return (
     <>
-      <div className="bg-base-100 mx-auto max-w-screen-xl px-4 py-8">
+      <div className="bg-base-100 mx-auto max-w-screen-xl px-4 lg:py-8">
         <h1 className="text-2xl font-bold mt-8">Terms and Conditions</h1>
         <p className="mt-4">
           These terms and conditions outline the rules and regulations for the

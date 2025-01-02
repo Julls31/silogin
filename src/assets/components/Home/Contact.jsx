@@ -10,10 +10,10 @@ function Contact() {
             <h2 className="text-lg font-semibold text-gray-500 uppercase mb-8 tracking-wide">
               our contact
             </h2>
-            <h1 className="text-3xl font-semibold text-gray-600 mt-2">
+            <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600 mt-2">
               Kami selalu siap membantu anda!
             </h1>
-            <h1 className="text-3xl font-semibold text-gray-600 mt-2">
+            <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600 mt-2">
               Hubungi kami melalui salah satu saluran berikut:
             </h1>
           </div>
