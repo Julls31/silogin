@@ -1,14 +1,11 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Footer() {
   const navigate = useNavigate();
 
   const handleScrollToTop = (path) => {
-    // Navigasi ke rute yang sesuai
     navigate(path);
-
-    // Animasi scroll ke atas
     window.scrollTo({
       top: 0,
       behavior: "smooth",
@@ -18,73 +15,145 @@ function Footer() {
   return (
     <footer className="bg-base-200 text-base-content py-10">
       <div className="container mx-auto px-4">
-        {/* Centered Logo and Social Media */}
-        <div className="flex flex-col items-center space-y-6">
-          {/* Logo */}
+        {/* Logo Section */}
+        <div className="flex justify-center mb-8">
+          <img
+            src="/image/siLoginTagline.png"
+            alt="Logo"
+            className="w-48 h-auto"
+          />
+        </div>
+
+        {/* Footer Content */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left px-8">
+          {/* Collaboration Section */}
           <div>
-            <img src="/image/siLoginTagline.png" alt="Logo" className="w-48 h-auto" />
+            <h6 className="text-lg font-semibold text-red-500 mb-2">
+              BEKERJA SAMA DENGAN
+            </h6>
+            <ul className="space-y-1 text-sm">
+              <li>
+                <a
+                  href="https://lkpp.go.id"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-red-500"
+                >
+                  LKPP (Lembaga Kebijakan Barang/Jasa)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://e-katalog.lkpp.go.id"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-red-500"
+                >
+                  E Catalogue
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://inaproc.id"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-red-500"
+                >
+                  INAPROC
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Customer Services */}
+          <div className="lg:ml-8">
+            <h6 className="text-lg font-semibold text-red-500 mb-2">
+              CUSTOMER SERVICES
+            </h6>
+            <ul className="space-y-1 text-sm">
+              <li className="hover:text-red-500">0812 - xxxx - xxxx</li>
+              <li className="hover:text-red-500">0812 - xxxx - xxxx</li>
+            </ul>
+          </div>
+
+          {/* Legal Section */}
+          <div className="lg:ml-16">
+            <h6 className="text-lg font-semibold text-red-500 mb-2">LEGAL</h6>
+            <ul className="space-y-1 text-sm">
+              <li>
+                <button
+                  onClick={() => handleScrollToTop("/privacy")}
+                  className="hover:text-red-500"
+                >
+                  Privacy Policy
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleScrollToTop("/terms")}
+                  className="hover:text-red-500"
+                >
+                  Terms & Conditions
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleScrollToTop("/sitemap")}
+                  className="hover:text-red-500"
+                >
+                  Sitemap
+                </button>
+              </li>
+            </ul>
           </div>
 
           {/* Social Media */}
-          <div className="text-center">
-            <h6 className="text-lg font-bold mb-4">Follow Us</h6>
-            <div className="flex justify-center space-x-6 text-2xl">
+          <div className="lg:ml-8">
+            <h6 className="text-lg font-semibold text-red-500 mb-2">
+              SOCIAL MEDIA
+            </h6>
+            <div className="flex justify-center md:justify-start space-x-4">
               <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-blue-600 transition duration-200"
+                className="hover:text-red-500"
               >
-                <i className="fab fa-facebook"></i>
+                <i className="fab fa-facebook text-xl"></i>
               </a>
               <a
-                href="https://twitter.com"
+                href="https://x.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-gray-700 transition duration-200"
+                className="hover:text-red-500"
               >
-                <i className="fab fa-x-twitter"></i>
+                <i className="fab fa-x-twitter text-xl"></i>
               </a>
               <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-pink-500 transition duration-200"
+                className="hover:text-red-500"
               >
-                <i className="fab fa-instagram"></i>
+                <i className="fab fa-instagram text-xl"></i>
               </a>
               <a
                 href="https://youtube.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-red-500 transition duration-200"
+                className="hover:text-red-500"
               >
-                <i className="fab fa-youtube"></i>
+                <i className="fab fa-youtube text-xl"></i>
               </a>
             </div>
           </div>
         </div>
 
-        {/* Footer Bottom with Legal Links and Copyright */}
-        <div className="border-t border-gray-300 pt-4 mt-6 text-center">
+        {/* Footer Bottom */}
+        <div className="mt-8 border-t border-gray-300 pt-4 text-center">
           <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} siLogin. All rights reserved.
+            © {new Date().getFullYear()} siLogin Travel. All rights reserved.
           </p>
-          <nav className="mt-2 space-x-4">
-            <button
-              onClick={() => handleScrollToTop("/terms-and-conditions")}
-              className="text-gray-500 hover:text-red-500 focus:outline-none"
-            >
-              Terms & Conditions
-            </button>
-            <span className="text-gray-500">•</span>
-            <button
-              onClick={() => handleScrollToTop("/privacy-policy")}
-              className="text-gray-500 hover:text-red-500 focus:outline-none"
-            >
-              Privacy Policy
-            </button>
-          </nav>
         </div>
       </div>
     </footer>
