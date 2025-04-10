@@ -33,55 +33,56 @@ function FAQ() {
         </div>
 
         {/* Desktop Layout */}
-        <div className="hidden lg:flex relative gap-8">
-          {/* Questions Card */}
-          <div
-            className="bg-white shadow-lg p-6 rounded-lg w-full lg:w-1/2 h-full overflow-y-auto relative z-10 mt-28 transform transition-all duration-500 ease-in-out"
-            style={{ transform: "translateX(6rem)" }}
-          >
-            <ul>
-              {questions.map((question, index) => (
-                <li
-                  key={index}
-                  className={`p-4 mb-2 flex items-center justify-between rounded-lg cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 ${
-                    activeQuestion === index
-                      ? "bg-red-100 text-red-500"
-                      : "bg-gray-100 text-gray-600"
-                  }`}
-                  onClick={() => setActiveQuestion(index)}
-                >
-                  {/* Question with Circle Icon */}
-                  <span className="flex items-center gap-2">
-                    <i
-                      className={`fa fa-circle ${
+        <section
+          className="bg-cover bg-center rounded-lg py-0 px-0 md:py-24 md:px-8"
+          style={{ backgroundImage: "url(/image/table_bg.png)" }}
+        >
+          <div className="hidden lg:flex relative gap-8">
+            {/* Questions Card */}
+            <div
+              className="bg-white shadow-lg p-6 rounded-lg w-full lg:w-1/2 h-full overflow-y-auto relative z-10 mt-6 transform transition-all duration-500 ease-in-out"
+              style={{ transform: "translateX(6rem)" }}
+            >
+              <ul>
+                {questions.map((question, index) => (
+                  <li
+                    key={index}
+                    className={`p-4 mb-2 flex items-center justify-between rounded-lg cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 ${
+                      activeQuestion === index
+                        ? "bg-red-100 text-red-500"
+                        : "bg-gray-100 text-gray-600"
+                    }`}
+                    onClick={() => setActiveQuestion(index)}
+                  >
+                    {/* Question with Circle Icon */}
+                    <span className="flex items-center gap-2">
+                      <i
+                        className={`fa fa-circle ${
+                          activeQuestion === index
+                            ? "text-red-500"
+                            : "text-red-300"
+                        }`}
+                      />
+                      {question}
+                    </span>
+
+                    {/* Arrow Icon */}
+                    <span
+                      className={`${
                         activeQuestion === index
                           ? "text-red-500"
-                          : "text-red-300"
-                      }`}
-                    />
-                    {question}
-                  </span>
+                          : "text-gray-400"
+                      } transition-transform duration-300 ease-in-out transform`}
+                    >
+                      &gt;
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-                  {/* Arrow Icon */}
-                  <span
-                    className={`${
-                      activeQuestion === index
-                        ? "text-red-500"
-                        : "text-gray-400"
-                    } transition-transform duration-300 ease-in-out transform`}
-                  >
-                    &gt;
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
+            {/* Answers Card */}
 
-          {/* Answers Card */}
-          <section
-            className="bg-cover bg-center rounded-lg py-0 px-0 md:py-24 md:px-8"
-            style={{ backgroundImage: "url(/image/table_bg.png)" }}
-          >
             <div
               className={`bg-gray-100 shadow-lg p-8 pl-20 rounded-lg w-full lg:w-[500px] min-h-[440px] -mt-4 transition-opacity duration-500 ease-in-out transform ${
                 activeQuestion === null
@@ -94,8 +95,8 @@ function FAQ() {
               </h3>
               <p className="text-gray-500">{answers[activeQuestion]}</p>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
 
         {/* Mobile Layout */}
         <div className="lg:hidden">
@@ -114,9 +115,7 @@ function FAQ() {
               <div className="collapse-title text-lg font-medium flex items-center gap-2">
                 <i
                   className={`fa fa-circle ${
-                    activeQuestion === index
-                      ? "text-red-500"
-                      : "text-red-300"
+                    activeQuestion === index ? "text-red-500" : "text-red-300"
                   }`}
                 />
                 {question}

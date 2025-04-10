@@ -71,8 +71,7 @@ function Footer() {
               CUSTOMER SERVICES
             </h6>
             <ul className="space-y-1 text-sm">
-              <li className="hover:text-red-500">0812 - xxxx - xxxx</li>
-              <li className="hover:text-red-500">0812 - xxxx - xxxx</li>
+              <li className="hover:text-red-500">0821 2176 3671</li>
             </ul>
           </div>
 
@@ -119,7 +118,7 @@ function Footer() {
                 rel="noopener noreferrer"
                 className="hover:text-red-500"
               >
-                <i className="fab fa-facebook text-xl"></i>
+                <i className="fab fa-facebook text-2xl"></i>
               </a>
               <a
                 href="https://x.com"
@@ -127,7 +126,7 @@ function Footer() {
                 rel="noopener noreferrer"
                 className="hover:text-red-500"
               >
-                <i className="fab fa-x-twitter text-xl"></i>
+                <i className="fab fa-x-twitter text-2xl"></i>
               </a>
               <a
                 href="https://instagram.com"
@@ -135,7 +134,7 @@ function Footer() {
                 rel="noopener noreferrer"
                 className="hover:text-red-500"
               >
-                <i className="fab fa-instagram text-xl"></i>
+                <i className="fab fa-instagram text-2xl"></i>
               </a>
               <a
                 href="https://youtube.com"
@@ -143,7 +142,7 @@ function Footer() {
                 rel="noopener noreferrer"
                 className="hover:text-red-500"
               >
-                <i className="fab fa-youtube text-xl"></i>
+                <i className="fab fa-youtube text-2xl"></i>
               </a>
             </div>
           </div>
@@ -152,7 +151,7 @@ function Footer() {
         {/* Footer Bottom */}
         <div className="mt-8 border-t border-gray-300 pt-4 text-center">
           <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} siLogin Travel. All rights reserved.
+            © {new Date().getFullYear()} <span className="text-red-500">siLogin</span>. All rights reserved.
           </p>
         </div>
       </div>

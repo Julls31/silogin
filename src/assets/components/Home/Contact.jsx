@@ -31,19 +31,19 @@ function Contact() {
                   icon: "fa fa-phone",
                   title: "Telepon",
                   content:
-                    "Hubungi kami di [xxxx-xxxx-xxxx-xxxx]. Layanan telepon kami tersedia 24/7 Senin s/d Jum’at.",
+                    "Hubungi kami di [0821-2176-3671]. Layanan telepon kami tersedia 24/7 Senin s/d Jum’at.",
                 },
                 {
                   icon: "fa-regular fa-envelope",
                   title: "Email",
                   content:
-                    "Kirim pertanyaan atau keluhan Anda ke [silogin@mail.com]. Tim kami akan merespons maksimal 1x24 jam.",
+                    "Kirim pertanyaan atau keluhan Anda ke [info@silogin.id]. Tim kami akan merespons maksimal 1x24 jam.",
                 },
                 {
                   icon: "fa-regular fa-message",
                   title: "Live Chat",
                   content:
-                    "Kunjungi situs web kami di [www.silogin.id] dan klik ikon live chat untuk bantuan instan.",
+                    "Kunjungi situs web kami di [silogin.id] dan klik ikon live chat untuk bantuan instan.",
                 },
                 {
                   icon: "fa fa-chart-simple",
@@ -55,13 +55,13 @@ function Contact() {
                   icon: "fa-brands fa-whatsapp",
                   title: "Chat WhatsApp",
                   content:
-                    "Chat langsung via Whatsapp di nomor [xxxx-xxxx-xxxx-xxxx].",
+                    "Chat langsung via Whatsapp di nomor [0821-2176-3671].",
                 },
                 {
                   icon: "fa fa-location-dot",
                   title: "Kunjungi Langsung",
                   content:
-                    "Alamat kantor: [Alamat Lengkap Anda] Jam operasional: [Senin s/d Jum’at 08:00 s/d 17:00]",
+                    "Alamat kantor: [Jl. Raya Ragunan No.29 A, RT.8/RW.6, Jati Padang, Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12540] Jam operasional: [Senin s/d Jum’at 08:00 s/d 17:00]",
                 },
               ].map((card, index) => (
                 <div
