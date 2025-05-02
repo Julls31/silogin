@@ -29,7 +29,7 @@ function App() {
                   <Route path="/services" />
                   <Route path="/contact" />
                   <Route path="/privacy-policy" element={<Privacy />} />
-                  <Route path="/calculator" element={<Calculator /> } />
+                  <Route path="/kalkulatorpremi" element={<Calculator /> } />
                   <Route
                     path="/terms-and-conditions"
                     element={<TermAndCondition />}

@@ -101,7 +101,7 @@ function Navbar() {
           >
             Contact
           </button>
-          <Link to="/calculator">
+          <Link to="/kalkulatorpremi">
           {/* <button
             className="block lg:inline-block text-gray-600 hover:text-black py-2"
           >

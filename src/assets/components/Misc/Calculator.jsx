@@ -59,13 +59,16 @@ function Calculator() {
         nilai: nilai,
         premi: result.total_premium,
         nama: result.product_name,
-        deskripsi: `Nilai Asuransi ini sudah termasuk dengan nilai asuransi asset/barang dan asuransi pengiriman`,
-      });
+        deskripsi:
+          result.premium_mpar === 0.0
+            ? "Nilai Asuransi ini sudah termasuk dengan nilai asuransi asset/barang dan asuransi pengiriman"
+            : "Nilai Asuransi ini sudah termasuk dengan nilai asuransi  pengiriman",
+      });      
     } catch (error) {
       Swal.fire({
         icon: 'error',
         title: 'Terjadi Kesalahan',
-        text: 'Terjadi kesalahan saat menghitung premi.',
+        text: 'Terjadi kesalahan saat menghitung premi atau kode barang tidak ditemukan.',
       });
     } finally {
       setLoading(false);
