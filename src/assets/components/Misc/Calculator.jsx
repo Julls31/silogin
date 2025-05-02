@@ -61,8 +61,8 @@ function Calculator() {
         nama: result.product_name,
         deskripsi:
           result.premium_mpar === 0.0
-            ? "Nilai Asuransi ini sudah termasuk dengan nilai asuransi asset/barang dan asuransi pengiriman"
-            : "Nilai Asuransi ini sudah termasuk dengan nilai asuransi  pengiriman",
+            ? "Nilai Asuransi ini sudah termasuk dengan nilai asuransi pengiriman"
+            : "Nilai Asuransi ini sudah termasuk dengan nilai asuransi asset/barang dan asuransi pengiriman",
       });      
     } catch (error) {
       Swal.fire({
