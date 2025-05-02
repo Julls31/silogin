@@ -5,6 +5,7 @@ import Footer from "./assets/layout/Footer";
 import Home from "./assets/pages/Main/Home";
 import Privacy from "./assets/pages/Privacy";
 import TermAndCondition from "./assets/pages/TermAndCondition";
+import Calculator from "./assets/components/Misc/Calculator";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
                   <Route path="/services" />
                   <Route path="/contact" />
                   <Route path="/privacy-policy" element={<Privacy />} />
+                  <Route path="/calculator" element={<Calculator /> } />
                   <Route
                     path="/terms-and-conditions"
                     element={<TermAndCondition />}

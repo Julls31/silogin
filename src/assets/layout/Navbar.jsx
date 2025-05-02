@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -101,6 +101,13 @@ function Navbar() {
           >
             Contact
           </button>
+          <Link to="/calculator">
+          {/* <button
+            className="block lg:inline-block text-gray-600 hover:text-black py-2"
+          >
+            Calculator
+            </button> */}
+            </Link>
           <div className="flex flex-col lg:flex-row lg:space-x-4 mt-4 space-y-2 lg:space-y-0 lg:mt-0">
             <button className="btn btn-outline border-[#DEE1E6] text-[#000] hover:text-black hover:bg-[#DEE1E6] hover:border-[#DEE1E6]">
               <i className="fa fa-headset" /> Contact Support
