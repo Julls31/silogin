@@ -9,9 +9,9 @@ function Privacy() {
         <div className="max-w-screen-xl mx-auto px-4 pt-20">
           <PrivacyPolicy />
         </div>
-        <div className="max-w-screen-xl mx-auto px-4 mt-20 mb-32">
+        {/* <div className="max-w-screen-xl mx-auto px-4 mt-20 mb-32">
           <ContactUs />
-        </div>
+        </div> */}
       </div>
         </>
     )

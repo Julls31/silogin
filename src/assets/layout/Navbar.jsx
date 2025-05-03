@@ -87,19 +87,19 @@ function Navbar() {
             onClick={() => handleScroll("about", "/")}
             className="block lg:inline-block text-gray-600 hover:text-black py-2"
           >
-            About
+            Tentang
           </button>
           <button
             onClick={() => handleScroll("services", "/")}
             className="block lg:inline-block text-gray-600 hover:text-black py-2"
           >
-            Services
+            Layanan
           </button>
           <button
             onClick={() => handleScroll("contact", "/")}
             className="block lg:inline-block text-gray-600 hover:text-black py-2"
           >
-            Contact
+            Kontak
           </button>
           <Link to="/kalkulatorpremi">
           {/* <button
@@ -108,14 +108,14 @@ function Navbar() {
             Calculator
             </button> */}
             </Link>
-          <div className="flex flex-col lg:flex-row lg:space-x-4 mt-4 space-y-2 lg:space-y-0 lg:mt-0">
+          {/* <div className="flex flex-col lg:flex-row lg:space-x-4 mt-4 space-y-2 lg:space-y-0 lg:mt-0">
             <button className="btn btn-outline border-[#DEE1E6] text-[#000] hover:text-black hover:bg-[#DEE1E6] hover:border-[#DEE1E6]">
               <i className="fa fa-headset" /> Contact Support
             </button>
             <button className="btn bg-[#DB1F26] text-white hover:bg-[#b51a20]">
               Get Started
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

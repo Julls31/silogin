@@ -61,8 +61,8 @@ function Calculator() {
         nama: result.product_name,
         deskripsi:
           result.premium_mpar === 0.0
-            ? "Nilai Asuransi ini sudah termasuk dengan nilai asuransi pengiriman"
-            : "Nilai Asuransi ini sudah termasuk dengan nilai asuransi asset/barang dan asuransi pengiriman",
+            ? "Premi Asuransi ini sudah termasuk dengan premi Asuransi Pengiriman (Cargo)"
+            : "Premi Asuransi ini sudah termasuk dengan premi Asuransi Moveable Property All Risk (MPAR) dan Asuransi Pengiriman (Cargo)",
       });      
     } catch (error) {
       Swal.fire({
@@ -76,9 +76,9 @@ function Calculator() {
   };
 
   return (
-    <div className="p-4 mx-auto py-24">
+    <div className="p-4 mx-auto min-h-screen py-24">
       <div className="mb-4">
-        <h1 className="text-2xl font-semibold">Kalkulator Perhitungan Premi</h1>
+        <h1 className="text-2xl font-semibold">Kalkulator Perhitungan Premi Asuransi</h1>
       </div>
 
       {/* Form */}
@@ -99,13 +99,13 @@ function Calculator() {
           />
         </div>
         <div className="w-full md:flex-1">
-          <label className="font-semibold block mb-1">Nilai Barang</label>
+          <label className="font-semibold block mb-1">Harga Barang</label>
           <input
             type="text"
             value={nilaiBarang}
             onChange={(e) => setNilaiBarang(e.target.value)}
             className="w-full p-2 border rounded"
-            placeholder="Masukkan nilai barang"
+            placeholder="Masukkan harga barang"
           />
         </div>
         <button
@@ -133,7 +133,7 @@ function Calculator() {
               <p className="font-semibold">Nama Barang:</p>
               <p className="text-red-700 font-bold mb-2">{hasil.nama}</p>
 
-              <p className="font-semibold">Nilai Barang:</p>
+              <p className="font-semibold">Harga Barang:</p>
               <p className="text-red-700 font-bold mb-2">
                 {formatRupiah(hasil.nilai)}
               </p>

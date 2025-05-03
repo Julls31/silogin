@@ -8,7 +8,7 @@ function Contact() {
           {/* Header */}
           <div className="text-center mb-12">
             <h2 className="text-lg font-semibold text-gray-500 uppercase mb-8 tracking-wide">
-              our contact
+              Kontak
             </h2>
             <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600 mt-2">
               Kami selalu siap membantu anda!
@@ -24,14 +24,14 @@ function Contact() {
             style={{ backgroundImage: "url(/image/table_bg.png)" }}
           >
             {/* Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/** Array of card data */}
               {[
                 {
                   icon: "fa fa-phone",
                   title: "Telepon",
                   content:
-                    "Hubungi kami di [0821-2176-3671]. Layanan telepon kami tersedia 24/7 Senin s/d Jum’at.",
+                    "Hubungi kami di [0821-2176-3671]. Layanan telepon kami tersedia Senin s/d Jum’at.",
                 },
                 {
                   icon: "fa-regular fa-envelope",
@@ -39,12 +39,12 @@ function Contact() {
                   content:
                     "Kirim pertanyaan atau keluhan Anda ke [info@silogin.id]. Tim kami akan merespons maksimal 1x24 jam.",
                 },
-                {
-                  icon: "fa-regular fa-message",
-                  title: "Live Chat",
-                  content:
-                    "Kunjungi situs web kami di [silogin.id] dan klik ikon live chat untuk bantuan instan.",
-                },
+                // {
+                //   icon: "fa-regular fa-message",
+                //   title: "Live Chat",
+                //   content:
+                //     "Kunjungi situs web kami di [silogin.id] dan klik ikon live chat untuk bantuan instan.",
+                // },
                 {
                   icon: "fa fa-chart-simple",
                   title: "Media Sosial",
@@ -57,12 +57,12 @@ function Contact() {
                   content:
                     "Chat langsung via Whatsapp di nomor [0821-2176-3671].",
                 },
-                {
-                  icon: "fa fa-location-dot",
-                  title: "Kunjungi Langsung",
-                  content:
-                    "Alamat kantor: [Jl. Raya Ragunan No.29 A, RT.8/RW.6, Jati Padang, Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12540] Jam operasional: [Senin s/d Jum’at 08:00 s/d 17:00]",
-                },
+                // {
+                //   icon: "fa fa-location-dot",
+                //   title: "Kunjungi Langsung",
+                //   content:
+                //     "Alamat kantor: [Jl. Raya Ragunan No.29 A, RT.8/RW.6, Jati Padang, Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12540] Jam operasional: [Senin s/d Jum’at 08:00 s/d 17:00]",
+                // },
               ].map((card, index) => (
                 <div
                   key={index}
@@ -71,7 +71,7 @@ function Contact() {
                   {/* Card Header */}
                   <div className="flex-1 mb-4">
                     <h3 className="text-xl font-semibold text-gray-700">
-                      <i className={`${card.icon} mr-2`} /> {card.title}
+                      <i className={`${card.icon} mr-2`} /> <span className="text-red-600">{card.title}</span> 
                     </h3>
                   </div>
 
@@ -81,11 +81,11 @@ function Contact() {
                   </div>
 
                   {/* Card Footer */}
-                  <div className="flex justify-start">
+                  {/* <div className="flex justify-start">
                     <button className="btn btn-sm btn-primary">
                       Hubungi Kami <i className="fa fa-arrow-right" />
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               ))}
             </div>

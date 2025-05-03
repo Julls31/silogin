@@ -1,6 +1,6 @@
 import React from "react";
 import TermsAndConditions from "../components/TermsAndConditions/TermsAndCondition";
-import ContactUs from "../components/ContactUs";
+// import ContactUs from "../components/ContactUs";
 
 function TermAndCondition() {
   return (
@@ -9,9 +9,9 @@ function TermAndCondition() {
         <div className="max-w-screen-xl mx-auto px-4 pt-20">
           <TermsAndConditions />
         </div>
-        <div className="max-w-screen-xl mx-auto px-4 mt-20 mb-32">
+        {/* <div className="max-w-screen-xl mx-auto px-4 mt-20 mb-32">
           <ContactUs />
-        </div>
+        </div> */}
       </div>
     </>
   );

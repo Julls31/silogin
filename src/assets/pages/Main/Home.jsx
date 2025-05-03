@@ -34,11 +34,11 @@ function Home() {
           <FAQ />
         </div>
       </div>
-      <div className="bg-base-200">
+      {/* <div className="bg-base-200">
         <div className="max-w-screen-lg mx-auto my-10">
           <ContactUs />
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

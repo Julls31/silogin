@@ -31,78 +31,88 @@ function Footer() {
             <h6 className="text-lg font-semibold text-red-500 mb-2">
               BEKERJA SAMA DENGAN
             </h6>
-            <ul className="space-y-1 text-sm">
+            <ul className="text-sm">
               <li>
                 <a
                   href="https://lkpp.go.id"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-red-500"
+                  className="inline-block hover:opacity-80 transition-opacity"
                 >
-                  LKPP (Lembaga Kebijakan Barang/Jasa)
+                  <img
+                    src="/image/lkpp.png"
+                    alt="LKPP"
+                    className="h-16 lg:-ml-2 object-contain"
+                  />
                 </a>
               </li>
+
               <li>
                 <a
-                  href="https://e-katalog.lkpp.go.id"
+                  href="https://katalog.inaproc.id/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-red-500"
+                  className="inline-block hover:opacity-80 transition-opacity"
                 >
-                  E Catalogue
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://inaproc.id"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-red-500"
-                >
-                  INAPROC
+                  <img
+                    src="/image/inaproc.png"
+                    alt="INAPROC"
+                    className="h-8 object-contain"
+                  />
                 </a>
               </li>
             </ul>
           </div>
 
           {/* Customer Services */}
-          <div className="lg:ml-8">
+          <div className="lg:ml-8 text-center lg:text-left">
             <h6 className="text-lg font-semibold text-red-500 mb-2">
-              CUSTOMER SERVICES
+              CUSTOMER CARE
             </h6>
-            <ul className="space-y-1 text-sm">
-              <li className="hover:text-red-500">0821 2176 3671</li>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li className="flex justify-center lg:justify-start items-center gap-2 hover:text-red-500">
+                <i className="fas fa-phone-alt text-gray-700"></i>
+                0821 2176 3671
+              </li>
+              <li className="flex justify-center lg:justify-start items-center gap-2 hover:text-red-500">
+                <i className="fab fa-whatsapp text-gray-700"></i>
+                0821 2176 3671
+              </li>
+              <li className="flex justify-center lg:justify-start items-center gap-2 hover:text-red-500">
+                <i className="fas fa-envelope text-gray-700"></i>
+                info@silogin.id
+              </li>
             </ul>
           </div>
 
           {/* Legal Section */}
           <div className="lg:ml-16">
-            <h6 className="text-lg font-semibold text-red-500 mb-2">LEGAL</h6>
+            <h6 className="text-lg font-semibold text-red-500 mb-2">KETENTUAN HUKUM</h6>
             <ul className="space-y-1 text-sm">
               <li>
                 <button
-                  onClick={() => handleScrollToTop("/privacy")}
+                  onClick={() => handleScrollToTop("/privacy-policy")}
                   className="hover:text-red-500"
                 >
-                  Privacy Policy
+                  Kebijakan Privasi
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => handleScrollToTop("/terms")}
+                  onClick={() => handleScrollToTop("/terms-and-conditions")}
                   className="hover:text-red-500"
                 >
-                  Terms & Conditions
+                  Syarat & Ketentuan
                 </button>
               </li>
-              <li>
+              {/* <li>
                 <button
                   onClick={() => handleScrollToTop("/sitemap")}
                   className="hover:text-red-500"
                 >
                   Sitemap
                 </button>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -151,7 +161,8 @@ function Footer() {
         {/* Footer Bottom */}
         <div className="mt-8 border-t border-gray-300 pt-4 text-center">
           <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} <span className="text-red-500">siLogin</span>. All rights reserved.
+            © {new Date().getFullYear()}{" "}
+            <span className="text-red-500">siLogin</span>. All rights reserved.
           </p>
         </div>
       </div>

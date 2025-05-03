@@ -7,11 +7,10 @@ function Services() {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-lg font-semibold text-gray-500 uppercase mb-8 tracking-wide">
-            our services
+            layanan
           </h2>
           <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600 mt-2">
-            Jenis Layanan Yang Ada Pada{" "}
-            <span className="text-red-600">SILOGIN</span>
+            Jenis Produk Asuransi <span className="text-red-600">SILOGIN</span>
           </h1>
         </div>
 
@@ -25,44 +24,50 @@ function Services() {
             {/* Card 1 */}
             <div className="p-6 border rounded-lg bg-white flex flex-col md:flex-row">
               <div className="flex-1">
-                <h3 className="text-xl font-semibold text-gray-700">
-                  ASURANSI <span className="text-red-600">KARGO</span>
+                <h3 className="text-lg font-semibold text-gray-700">
+                  ASURANSI <span className="text-red-600">PENGIRIMAN</span>
                 </h3>
                 <p className="text-gray-600 mt-4">
-                  Jenis asuransi yang dirancang untuk melindungi pengirim
-                  dan/atau penerima barang dari risiko kerugian atau kerusakan
-                  pada barang yang dikirim.
+                  Asuransi ini menjamin risiko kerusakan atau kehilangan
+                  terhadap barang selama dalam pengiriman, dari sejak barang itu
+                  dikirimkan oleh Penyedia / vendor hingga diterima oleh
+                  Pengguna.
                 </p>
               </div>
               <img
                 src="/image/kargo.png"
                 alt="Asuransi Kargo"
-                className="w-auto h-40 -mr-6 hidden md:block"
+                className="w-auto h-40 -mr-6 hidden lg:block"
               />
             </div>
 
             {/* Card 2 */}
             <div className="p-6 border rounded-lg bg-white flex flex-col md:flex-row">
               <div className="flex-1">
-                <h3 className="text-xl font-semibold text-gray-700">
-                  ASURANSI <span className="text-red-600">BARANG</span>
+                <h3 className="text-lg font-semibold text-gray-700">
+                  ASURANSI{" "}
+                  <span className="text-red-600">
+                  MOVEABLE PROPERTY ALL RISKS (MPAR)
+                  </span>
                 </h3>
                 <p className="text-gray-600 mt-4 w-[90%]">
-                  Jenis asuransi yang melindungi pemilik barang dari risiko
-                  kerugian atau kerusakan pada barang tersebut.
+                  Asuransi ini menjamin kerusakan atau kehilangan terhadap
+                  barang yang dipertanggungkan selama masa pertanggungan
+                  asuransi atas semua risiko, kecuali yang dikecualikan dalam
+                  polis asuransi.
                 </p>
               </div>
               <img
                 src="/image/barang.png"
                 alt="Asuransi Barang"
-                className="w-28 h-auto hidden md:block"
+                className="w-28 h-auto hidden lg:block"
               />
             </div>
 
             {/* Card 3 */}
             <div className="p-6 border rounded-lg bg-white flex flex-col md:flex-row">
               <div className="flex-1">
-                <h3 className="text-xl font-semibold text-gray-700">
+                <h3 className="text-lg font-semibold text-gray-700">
                   ASURANSI <span className="text-red-600">GARANSI</span>
                 </h3>
                 <p className="text-gray-600 mt-4 w-[90%]">
@@ -74,15 +79,15 @@ function Services() {
               <img
                 src="/image/garansi.png"
                 alt="Asuransi Garansi"
-                className="h-40 -mr-6 hidden md:block"
+                className="h-40 -mr-6 hidden lg:block"
               />
             </div>
 
             {/* Card 4 */}
             <div className="p-6 border rounded-lg bg-white flex flex-col md:flex-row">
               <div className="flex-1">
-                <h3 className="text-xl font-semibold text-gray-700">
-                  KEMUDAHAN <span className="text-red-600">KLAIM</span>
+                <h3 className="text-lg font-semibold text-gray-700">
+                  KEMUDAHAN <span className="text-red-600">PELAYANAN</span>
                 </h3>
                 <p className="text-gray-600 mt-4">
                   Proses pengajuan klaim asuransi yang mudah, cepat dan efisien,
@@ -92,7 +97,7 @@ function Services() {
               <img
                 src="/image/klaim.png"
                 alt="Kemudahan Klaim"
-                className="h-40 -mr-6 hidden md:block"
+                className="h-40 -mr-6 hidden lg:block"
               />
             </div>
           </div>

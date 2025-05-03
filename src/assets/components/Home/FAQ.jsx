@@ -25,7 +25,7 @@ function FAQ() {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-lg font-semibold text-gray-500 uppercase mb-8 tracking-wide">
-            Case Studies
+            faq
           </h2>
           <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600 mt-2">
             Beberapa pertanyaan yang sering ditanyakan

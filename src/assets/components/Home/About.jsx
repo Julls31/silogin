@@ -7,7 +7,7 @@ function About() {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-lg font-semibold text-gray-500 uppercase mb-8 tracking-wide">
-            About Us
+            Tentang
           </h2>
           <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600">
             Apa Itu <span className="text-red-600">SILOGIN</span> ?
@@ -33,19 +33,24 @@ function About() {
             {/* Description */}
             <div className="text-gray-700 text-lg leading-relaxed text-justify px-4 md:px-0">
               <p>
-                Hadirnya sistem eCatalogue dan ePurchasing platform digital
-                memudahkan pengadaan barang dan jasa oleh pemerintah Indonesia.
+              Program Asuransi yang memberikan perlindungan asuransi dengan
+                cepat dan mudah bagi Penyedia / Vendor dalam bertransaksi atas
+                pembelian barang oleh Pemerintah (Lembaga / Kementerian /
+                Pemerintah Daerah - LKPD) di e-catalogue melalui sistem aplikasi
+                <strong className="text-red-600"> SiLogin</strong>.
               </p>
-              <p className="mt-4">
-                Produk siLogin memberikan solusi asuransi komprehensif dan mudah
-                diakses bagi Kementerian, Lembaga Pemerintah, dan Supplier.
-              </p>
-              <p className="mt-4">
-                Layanan asuransi digital ini melindungi konsumen dari risiko
-                pembelian produk, pengiriman, dan tanggung jawab produk. siLogin
-                juga menyediakan layanan 24/7 untuk penutupan asuransi,
-                pembayaran premi, pengajuan klaim, dan alarm center.
-              </p>
+              <div className="mt-4">
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">
+                  Tujuan Asuransi SILOGIN:
+                </h3>
+                <ul className="list-disc list-inside space-y-2 text-gray-600">
+                  <li>Perlindungan keuangan negara</li>
+                  <li>Penjaminan kualitas pengadaan</li>
+                  <li>Peningkatan efisiensi sistem</li>
+                  <li>Standarisasi perlindungan</li>
+                  <li>Optimalisasi e-catalogue</li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
