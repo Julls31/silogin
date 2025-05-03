@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Swal from 'sweetalert2';
 
 function Calculator() {
@@ -74,6 +74,11 @@ function Calculator() {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
 
   return (
     <div className="p-4 mx-auto min-h-screen py-24">

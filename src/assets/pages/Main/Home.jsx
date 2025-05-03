@@ -5,6 +5,7 @@ import Services from "../../components/Home/Services";
 import Contact from "../../components/Home/Contact";
 import FAQ from "../../components/Home/FAQ";
 import ContactUs from "../../components/ContactUs";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -39,9 +40,16 @@ function Home() {
           <ContactUs />
         </div>
       </div> */}
+      <Link to="/kalkulatorpremi">
+        <button className="fixed bottom-16 right-4 z-50 btn btn-sm btn-outline btn-primary">
+          {/* Desktop view with text */}
+          <span className="hidden sm:inline">Kalkulator Premi</span>
+          {/* Mobile/tablet view with icon */}
+          <i className="fa fa-calculator sm:hidden"></i>
+        </button>
+      </Link>
     </>
   );
 }
-
 
 export default Home;

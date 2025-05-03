@@ -28,7 +28,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left px-8">
           {/* Collaboration Section */}
           <div>
-            <h6 className="text-lg font-semibold text-red-500 mb-2">
+            <h6 className="text-lg font-semibold text-red-500">
               BEKERJA SAMA DENGAN
             </h6>
             <ul className="text-sm">
