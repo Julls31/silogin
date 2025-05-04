@@ -109,12 +109,12 @@ function Navbar() {
             </button> */}
             </Link>
           <div className="flex flex-col lg:flex-row lg:space-x-4 mt-4 space-y-2 lg:space-y-0 lg:mt-0">
-            <Link to="https://dev.rynest-technology.com:4443/">
+            <Link to="https://dev.rynest-technology.com:4442/">
             <button className="btn btn-outline border-[#DEE1E6] text-[#000] hover:text-black hover:bg-[#DEE1E6] hover:border-[#DEE1E6]">
               <i className="fa fa-headset" /> Customer Care / Klaim
               </button>
             </Link>
-            <Link to="https://dev.rynest-technology.com:4442/">
+            <Link to="https://dev.rynest-technology.com:4443/">
             <button className="btn bg-[#DB1F26] text-white hover:bg-[#b51a20]">
               Masuk / Daftar
               </button>
