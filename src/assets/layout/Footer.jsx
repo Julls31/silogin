@@ -25,11 +25,11 @@ function Footer() {
         </div>
 
         {/* Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left px-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 text-center md:text-left px-8">
           {/* Collaboration Section */}
           <div>
-            <h6 className="text-lg font-semibold text-red-500">
-              BEKERJA SAMA DENGAN
+            <h6 className="font-semibold text-red-500">
+              BEKERJASAMA DENGAN
             </h6>
             <ul className="text-sm">
               <li>
@@ -64,9 +64,48 @@ function Footer() {
             </ul>
           </div>
 
+           {/* Help Section */}
+           <div className="lg:ml-16">
+            <h6 className="font-semibold text-red-500 mb-2">BANTUAN</h6>
+            <ul className="space-y-1 text-sm">
+              <li>
+                <button
+                  // onClick={() => handleScrollToTop("/privacy-policy")}
+                  className="hover:text-red-500"
+                >
+                  Panduan Pembeli
+                </button>
+              </li>
+              <li>
+                <button
+                  // onClick={() => handleScrollToTop("/terms-and-conditions")}
+                  className="hover:text-red-500"
+                >
+                  Panduan Penyedia
+                </button>
+              </li>
+              <li>
+                <button
+                  // onClick={() => handleScrollToTop("/privacy-policy")}
+                  className="hover:text-red-500"
+                >
+                  FAQ Pembeli
+                </button>
+              </li>
+              <li>
+                <button
+                  // onClick={() => handleScrollToTop("/terms-and-conditions")}
+                  className="hover:text-red-500"
+                >
+                  FAQ Penyedia
+                </button>
+              </li>
+            </ul>
+          </div>
+
           {/* Customer Services */}
           <div className="lg:ml-8 text-center lg:text-left">
-            <h6 className="text-lg font-semibold text-red-500 mb-2">
+            <h6 className="font-semibold text-red-500 mb-2">
               CUSTOMER CARE
             </h6>
             <ul className="space-y-2 text-sm text-gray-700">
@@ -87,7 +126,7 @@ function Footer() {
 
           {/* Legal Section */}
           <div className="lg:ml-16">
-            <h6 className="text-lg font-semibold text-red-500 mb-2">KETENTUAN HUKUM</h6>
+            <h6 className="font-semibold text-red-500 mb-2">KETENTUAN HUKUM</h6>
             <ul className="space-y-1 text-sm">
               <li>
                 <button
@@ -116,9 +155,11 @@ function Footer() {
             </ul>
           </div>
 
+         
+
           {/* Social Media */}
           <div className="lg:ml-8">
-            <h6 className="text-lg font-semibold text-red-500 mb-2">
+            <h6 className="font-semibold text-red-500 mb-2">
               SOCIAL MEDIA
             </h6>
             <div className="flex justify-center md:justify-start space-x-4">

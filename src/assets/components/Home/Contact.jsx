@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Contact() {
   return (
@@ -71,7 +72,8 @@ function Contact() {
                   {/* Card Header */}
                   <div className="flex-1 mb-4">
                     <h3 className="text-xl font-semibold text-gray-700">
-                      <i className={`${card.icon} mr-2`} /> <span className="text-red-600">{card.title}</span> 
+                      <i className={`${card.icon} mr-2`} />{" "}
+                      <span className="text-red-600">{card.title}</span>
                     </h3>
                   </div>
 
@@ -90,12 +92,20 @@ function Contact() {
               ))}
             </div>
           </section>
-          {/* <div className="flex justify-center mt-8 lg:mt-4">
-            <button className="btn btn-primary rounded-3xl">
-              <i className="fa fa-arrow-right" />
-              Ke website siLogin
-            </button>
-          </div> */}
+          <div className="flex justify-center mt-8 lg:mt-4 space-x-4">
+            <Link to="https://dev.rynest-technology.com:4443/">
+              <button className="btn btn-primary rounded-3xl flex items-center gap-2">
+                <i className="fa fa-arrow-right" />
+                Website SiLogin
+              </button>
+            </Link>
+            <Link to="https://dev.rynest-technology.com:4443/">
+              <button className="btn btn-primary rounded-3xl flex items-center gap-2">
+                <i className="fa fa-arrow-right" />
+                Customer Care / Klaim
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </>

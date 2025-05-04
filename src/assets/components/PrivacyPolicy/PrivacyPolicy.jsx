@@ -52,7 +52,7 @@ function PrivacyPolicy() {
                       Kebijakan Privasi
                     </h1>
                     <p>
-                      siLogin berkomitmen untuk melindungi dan menghormati
+                      SiLogin berkomitmen untuk melindungi dan menghormati
                       kerahasiaan informasi pribadi pengguna (“Anda”) saat
                       mengakses dan menggunakan aplikasi, situs web
                       (https://silogin.id/ beserta subdomainnya), fitur,
@@ -62,7 +62,7 @@ function PrivacyPolicy() {
                       <br />
                       <br />
                       Kami membangun aplikasi asuransi sebagai aplikasi Gratis.
-                      Layanan ini disediakan oleh siLogin tanpa biaya dan
+                      Layanan ini disediakan oleh SiLogin tanpa biaya dan
                       dimaksudkan untuk digunakan sesuai ketentuan yang berlaku.
                       Kebijakan Privasi ini mengatur landasan dasar mengenai
                       bagaimana kami menggunakan informasi pribadi yang kami
@@ -76,7 +76,7 @@ function PrivacyPolicy() {
                       <br />
                       Jika menggunakan layanan pada platform kami maka Anda
                       telah menyetujui pengumpulan dan penggunaan informasi
-                      terkait dengan syarat dan ketentuan siLogin. Kami tidak
+                      terkait dengan syarat dan ketentuan SiLogin. Kami tidak
                       akan menggunakan atau membagikan informasi Anda kepada
                       siapa pun kecuali sebagaimana dijelaskan dalam Kebijakan
                       Privasi ini.
