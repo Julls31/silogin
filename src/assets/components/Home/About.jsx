@@ -31,7 +31,7 @@ function About() {
             </div>
 
             {/* Description */}
-            <div className="text-gray-700 text-lg leading-relaxed text-justify px-4 md:px-0">
+            <div className="text-gray-700 text-lg leading-relaxed text-justify px-4 md:px-0 py-4 lg:py-0">
               <p>
               Program Asuransi yang memberikan perlindungan asuransi dengan
                 cepat dan mudah bagi Penyedia / Vendor dalam bertransaksi atas

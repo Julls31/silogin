@@ -90,12 +90,12 @@ function Contact() {
               ))}
             </div>
           </section>
-          <div className="flex justify-center mt-8 lg:mt-4">
+          {/* <div className="flex justify-center mt-8 lg:mt-4">
             <button className="btn btn-primary rounded-3xl">
               <i className="fa fa-arrow-right" />
               Ke website siLogin
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
