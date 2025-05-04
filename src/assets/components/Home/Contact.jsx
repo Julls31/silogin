@@ -92,11 +92,11 @@ function Contact() {
               ))}
             </div>
           </section>
-          <div className="flex justify-center mt-8 lg:mt-4 space-x-4">
+          {/* <div className="flex justify-center mt-8 lg:mt-4 space-x-4">
             <Link to="https://dev.rynest-technology.com:4443/">
               <button className="btn btn-primary rounded-3xl flex items-center gap-2">
                 <i className="fa fa-arrow-right" />
-                Website SiLogin
+                Masuk / Daftar
               </button>
             </Link>
             <Link to="https://dev.rynest-technology.com:4443/">
@@ -105,7 +105,7 @@ function Contact() {
                 Customer Care / Klaim
               </button>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

@@ -28,75 +28,56 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4 text-center md:text-left px-8">
           {/* Collaboration Section */}
           <div>
-            <h6 className="font-semibold text-red-500">
-              BEKERJASAMA DENGAN
-            </h6>
-            <ul className="text-sm">
-              <li>
-                <a
-                  href="https://lkpp.go.id"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block hover:opacity-80 transition-opacity"
-                >
-                  <img
-                    src="/image/lkpp.png"
-                    alt="LKPP"
-                    className="h-16 lg:-ml-2 object-contain"
-                  />
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="https://katalog.inaproc.id/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block hover:opacity-80 transition-opacity"
-                >
-                  <img
-                    src="/image/inaproc.png"
-                    alt="INAPROC"
-                    className="h-8 object-contain"
-                  />
-                </a>
-              </li>
-            </ul>
+            <h6 className="font-semibold text-red-500">BEKERJASAMA DENGAN</h6>
+            <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-2">
+              <a
+                href="https://lkpp.go.id"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity"
+              >
+                <img
+                  src="/image/lkpp.png"
+                  alt="LKPP"
+                  className="h-16 object-contain"
+                />
+              </a>
+              <a
+                href="https://katalog.inaproc.id/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity"
+              >
+                <img
+                  src="/image/inaproc.png"
+                  alt="INAPROC"
+                  className="h-10 object-contain"
+                />
+              </a>
+            </div>
           </div>
 
-           {/* Help Section */}
-           <div className="lg:ml-16">
+          {/* Help Section */}
+          <div className="lg:ml-16">
             <h6 className="font-semibold text-red-500 mb-2">BANTUAN</h6>
             <ul className="space-y-1 text-sm">
               <li>
-                <button
-                  // onClick={() => handleScrollToTop("/privacy-policy")}
-                  className="hover:text-red-500"
-                >
+                <button className="hover:text-red-500">
                   Panduan Pembeli
                 </button>
               </li>
               <li>
-                <button
-                  // onClick={() => handleScrollToTop("/terms-and-conditions")}
-                  className="hover:text-red-500"
-                >
+                <button className="hover:text-red-500">
                   Panduan Penyedia
                 </button>
               </li>
               <li>
-                <button
-                  // onClick={() => handleScrollToTop("/privacy-policy")}
-                  className="hover:text-red-500"
-                >
+                <button className="hover:text-red-500">
                   FAQ Pembeli
                 </button>
               </li>
               <li>
-                <button
-                  // onClick={() => handleScrollToTop("/terms-and-conditions")}
-                  className="hover:text-red-500"
-                >
+                <button className="hover:text-red-500">
                   FAQ Penyedia
                 </button>
               </li>
@@ -105,9 +86,7 @@ function Footer() {
 
           {/* Customer Services */}
           <div className="lg:ml-8 text-center lg:text-left">
-            <h6 className="font-semibold text-red-500 mb-2">
-              CUSTOMER CARE
-            </h6>
+            <h6 className="font-semibold text-red-500 mb-2">CUSTOMER CARE</h6>
             <ul className="space-y-2 text-sm text-gray-700">
               <li className="flex justify-center lg:justify-start items-center gap-2 hover:text-red-500">
                 <i className="fas fa-phone-alt text-gray-700"></i>
@@ -130,38 +109,26 @@ function Footer() {
             <ul className="space-y-1 text-sm">
               <li>
                 <button
-                  onClick={() => handleScrollToTop("/privacy-policy")}
-                  className="hover:text-red-500"
-                >
-                  Kebijakan Privasi
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => handleScrollToTop("/terms-and-conditions")}
+                  onClick={() => handleScrollToTop("/syarat-ketentuan")}
                   className="hover:text-red-500"
                 >
                   Syarat & Ketentuan
                 </button>
               </li>
-              {/* <li>
+              <li>
                 <button
-                  onClick={() => handleScrollToTop("/sitemap")}
+                  onClick={() => handleScrollToTop("/kebijakan-privasi")}
                   className="hover:text-red-500"
                 >
-                  Sitemap
+                  Kebijakan Privasi
                 </button>
-              </li> */}
+              </li>
             </ul>
           </div>
 
-         
-
           {/* Social Media */}
           <div className="lg:ml-8">
-            <h6 className="font-semibold text-red-500 mb-2">
-              SOCIAL MEDIA
-            </h6>
+            <h6 className="font-semibold text-red-500 mb-2">SOCIAL MEDIA</h6>
             <div className="flex justify-center md:justify-start space-x-4">
               <a
                 href="https://facebook.com"
@@ -197,6 +164,23 @@ function Footer() {
               </a>
             </div>
           </div>
+        </div>
+
+        {/* Konsorsium Section */}
+        <h6 className="flex justify-center font-semibold text-red-500 mb-2 mt-8 uppercase text-center">
+          Konsorsium Pialang Asuransi Program Asuransi Silogin
+        </h6>
+        <div className="flex flex-wrap justify-center gap-6 items-center mb-8">
+          <img
+            src="/image/grm.png"
+            alt="GRM"
+            className="h-14 md:h-20 object-contain"
+          />
+          <img
+            src="/image/kokonut.png"
+            alt="Kokonut"
+            className="h-14 md:h-20 object-contain"
+          />
         </div>
 
         {/* Footer Bottom */}

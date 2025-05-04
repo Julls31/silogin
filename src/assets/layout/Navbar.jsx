@@ -116,7 +116,7 @@ function Navbar() {
             </Link>
             <Link to="https://dev.rynest-technology.com:4442/">
             <button className="btn bg-[#DB1F26] text-white hover:bg-[#b51a20]">
-              Website SiLogin
+              Masuk / Daftar
               </button>
               </Link>
           </div>

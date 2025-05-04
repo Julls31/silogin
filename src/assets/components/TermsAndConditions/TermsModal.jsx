@@ -153,17 +153,17 @@ const TermsModal = () => {
       )}
 
       {/* Floating Button */}
-      {hasSeen && !isOpen && (
+      {/* {hasSeen && !isOpen && (
         <button
           onClick={reopenModal}
           className="fixed bottom-4 right-4 z-50 btn btn-sm btn-outline btn-primary"
         >
-          {/* Teks untuk desktop */}
+       
           <span className="hidden sm:inline">Syarat & Ketentuan</span>
-          {/* Icon untuk mobile/tablet */}
+          
           <i className="fa fa-file-contract sm:hidden"></i>
         </button>
-      )}
+      )} */}
     </>
   );
 };

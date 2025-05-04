@@ -25,7 +25,7 @@ function App() {
           }
         />
         <Route
-          path="/privacy-policy"
+          path="/kebijakan-privasi"
           element={
             <Layout>
               <Privacy />
@@ -33,7 +33,7 @@ function App() {
           }
         />
         <Route
-          path="/terms-and-conditions"
+          path="/syarat-ketentuan"
           element={
             <Layout>
               <TermAndCondition />
