@@ -20,7 +20,7 @@ function About() {
           style={{ backgroundImage: "url(/image/table_bg.png)" }}
         >
           {/* Content */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-base-200">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-base-100">
             {/* Image */}
             <div className="text-center">
               <img

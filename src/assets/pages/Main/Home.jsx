@@ -6,6 +6,7 @@ import Contact from "../../components/Home/Contact";
 import FAQ from "../../components/Home/FAQ";
 import ContactUs from "../../components/ContactUs";
 import { Link } from "react-router-dom";
+import Product from "../../components/Home/Product";
 
 function Home() {
   return (
@@ -15,9 +16,14 @@ function Home() {
           <Intro />
         </div>
       </div>
-      <div id="about" className="bg-base-200">
+      <div id="about" className="bg-base-100">
         <div className="max-w-screen-lg mx-auto px-4 my-10">
           <About />
+        </div>
+      </div>
+      <div id="product" className="bg-base-100">
+        <div className="max-w-screen-xl mx-auto px-4 my-10">
+          <Product />
         </div>
       </div>
       <div id="services" className="bg-base-100">
@@ -25,7 +31,7 @@ function Home() {
           <Services />
         </div>
       </div>
-      <div id="contact" className="bg-base-200">
+      <div id="contact" className="bg-base-100">
         <div className="max-w-screen-xl mx-auto px-4 my-10">
           <Contact />
         </div>

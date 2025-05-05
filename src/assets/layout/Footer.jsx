@@ -25,7 +25,7 @@ function Footer() {
         </div>
 
         {/* Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 text-center md:text-left px-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-center md:text-left px-8">
           {/* Collaboration Section */}
           <div>
             <h6 className="font-semibold text-red-500">BEKERJASAMA DENGAN</h6>
@@ -39,7 +39,7 @@ function Footer() {
                 <img
                   src="/image/lkpp.png"
                   alt="LKPP"
-                  className="h-16 object-contain"
+                  className="h-20 lg:-ml-2 object-contain"
                 />
               </a>
               <a
@@ -59,34 +59,26 @@ function Footer() {
 
           {/* Help Section */}
           <div className="lg:ml-16">
-            <h6 className="font-semibold text-red-500 mb-2">BANTUAN</h6>
+            <h6 className="font-semibold text-red-500 mb-6">BANTUAN</h6>
             <ul className="space-y-1 text-sm">
               <li>
-                <button className="hover:text-red-500">
-                  Panduan Pembeli
-                </button>
+                <button className="hover:text-red-500">Panduan Pembeli</button>
               </li>
               <li>
-                <button className="hover:text-red-500">
-                  Panduan Penyedia
-                </button>
+                <button className="hover:text-red-500">Panduan Penyedia</button>
               </li>
               <li>
-                <button className="hover:text-red-500">
-                  FAQ Pembeli
-                </button>
+                <button className="hover:text-red-500">FAQ Pembeli</button>
               </li>
               <li>
-                <button className="hover:text-red-500">
-                  FAQ Penyedia
-                </button>
+                <button className="hover:text-red-500">FAQ Penyedia</button>
               </li>
             </ul>
           </div>
 
           {/* Customer Services */}
           <div className="lg:ml-8 text-center lg:text-left">
-            <h6 className="font-semibold text-red-500 mb-2">CUSTOMER CARE</h6>
+            <h6 className="font-semibold text-red-500 mb-6">CUSTOMER CARE</h6>
             <ul className="space-y-2 text-sm text-gray-700">
               <li className="flex justify-center lg:justify-start items-center gap-2 hover:text-red-500">
                 <i className="fas fa-phone-alt text-gray-700"></i>
@@ -105,7 +97,7 @@ function Footer() {
 
           {/* Legal Section */}
           <div className="lg:ml-16">
-            <h6 className="font-semibold text-red-500 mb-2">KETENTUAN HUKUM</h6>
+            <h6 className="font-semibold text-red-500 mb-4">KETENTUAN HUKUM</h6>
             <ul className="space-y-1 text-sm">
               <li>
                 <button
@@ -125,10 +117,12 @@ function Footer() {
               </li>
             </ul>
           </div>
+        </div>
 
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-center md:text-left px-8 pt-8">
           {/* Social Media */}
-          <div className="lg:ml-8">
-            <h6 className="font-semibold text-red-500 mb-2">SOCIAL MEDIA</h6>
+          <div>
+            <h6 className="font-semibold text-red-500 mb-2 lg:mb-6">SOSIAL MEDIA</h6>
             <div className="flex justify-center md:justify-start space-x-4">
               <a
                 href="https://facebook.com"
@@ -164,25 +158,25 @@ function Footer() {
               </a>
             </div>
           </div>
+          {/* Konsorsium Section */}
+          <div className="lg:-ml-56 md:-ml-44">
+            <h6 className="font-semibold text-red-500 mb-2 uppercase">
+              Konsorsium Pialang Asuransi Program Asuransi Silogin
+            </h6>
+            <div className="flex flex-wrap gap-6 justify-center md:justify-start items-center mb-8">
+              <img
+                src="/image/grm.png"
+                alt="GRM"
+                className="h-14 md:h-20 object-contain"
+              />
+              <img
+                src="/image/kokonut.png"
+                alt="Kokonut"
+                className="h-14 md:h-20 object-contain"
+              />
+            </div>
+          </div>
         </div>
-
-        {/* Konsorsium Section */}
-        <h6 className="flex justify-center font-semibold text-red-500 mb-2 mt-8 uppercase text-center">
-          Konsorsium Pialang Asuransi Program Asuransi Silogin
-        </h6>
-        <div className="flex flex-wrap justify-center gap-6 items-center mb-8">
-          <img
-            src="/image/grm.png"
-            alt="GRM"
-            className="h-14 md:h-20 object-contain"
-          />
-          <img
-            src="/image/kokonut.png"
-            alt="Kokonut"
-            className="h-14 md:h-20 object-contain"
-          />
-        </div>
-
         {/* Footer Bottom */}
         <div className="mt-8 border-t border-gray-300 pt-4 text-center">
           <p className="text-sm text-gray-500">

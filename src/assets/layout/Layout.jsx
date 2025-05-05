@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
         <Navbar />
       </div>
       <main className="max-w-screen-xl mx-auto px-4 py-8">{children}</main>
-      <div className="bg-base-200">
+      <div className="bg-base-100">
         <div className="max-w-screen-xl mx-auto px-4">
           <Footer />
         </div>

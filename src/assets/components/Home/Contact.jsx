@@ -5,7 +5,7 @@ function Contact() {
   return (
     <>
       <div className="container mx-auto px-4 py-4">
-        <div className="bg-base-200 lg:p-8 pt-8 rounded-lg">
+        <div className="bg-base-100 lg:p-8 pt-8 rounded-lg">
           {/* Header */}
           <div className="text-center mb-12">
             <h2 className="text-lg font-semibold text-gray-500 uppercase mb-8 tracking-wide">

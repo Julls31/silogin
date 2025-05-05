@@ -7,7 +7,7 @@ function ContactUs() {
         className="bg-cover bg-center rounded-lg py-0 px-0 md:py-24"
         style={{ backgroundImage: "url(/image/table_bg.png)" }}
       >
-        <div className="bg-base-200 lg:p-8 pt-8 rounded-lg text-center">
+        <div className="bg-base-100 lg:p-8 pt-8 rounded-lg text-center">
           {/* Heading */}
           <h1 className="text-2xl lg:text-3xl font-medium text-gray-800">
             Tingkatkan pengalaman pelanggan <br /> Anda hari ini.

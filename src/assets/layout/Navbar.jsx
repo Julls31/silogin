@@ -90,6 +90,12 @@ function Navbar() {
             Tentang
           </button>
           <button
+            onClick={() => handleScroll("product", "/")}
+            className="block lg:inline-block text-gray-800 hover:text-black py-2"
+          >
+            Produk
+          </button>
+          <button
             onClick={() => handleScroll("services", "/")}
             className="block lg:inline-block text-gray-800 hover:text-black py-2"
           >
