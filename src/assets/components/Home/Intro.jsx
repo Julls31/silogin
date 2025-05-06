@@ -1,48 +1,36 @@
 import React from "react";
+import Slider from "react-slick";
 
 function Intro() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 600,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+
+  const slides = [
+    "/image/slide1.svg",
+    "/image/slide2.svg",
+    "/image/slide3.svg",
+  ];
+
   return (
-    <section className="container mx-auto pt-12 px-6 lg:px-0">
-      <div className="flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0">
-        {/* Gambar Kiri */}
-        <div className="w-full lg:w-1/3">
-          <img
-            src="/image/women_silogin.png"
-            alt="women with silogin"
-            className="w-2/3 mx-auto lg:w-full object-contain"
-          />
-        </div>
-
-        {/* Konten Tengah */}
-        <div className="w-full lg:w-[40%] text-center lg:-mt-24 space-y-6">
-          <h1 className="text-2xl lg:text-3xl font-semibold">
-            Program Asuransi <span className="text-red-600">SiLogin</span>
-          </h1>
-          <p className="text-gray-600 text-sm sm:text-base lg:text-base leading-relaxed">
-            Program Asuransi yang memberikan perlindungan asuransi dengan cepat
-            dan mudah bagi Penyedia / Vendor dalam bertransaksi atas pembelian
-            barang oleh Pemerintah (Lembaga / Kementerian / Pemerintah Daerah -
-            LKPD) di e catalogue melalui sistem aplikasi SiLogin
-          </p>
-          {/* <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <button className="btn btn-primary rounded-3xl w-full sm:w-auto">
-              <i className="fa fa-arrow-right" /> Get Started
-            </button>
-            <button className="btn btn-outline rounded-3xl border-[#DB1F26] text-[#DB1F26] hover:text-[#DB1F26] hover:bg-[#f0f4f7] hover:border-[#DB1F26] w-full sm:w-auto">
-              <i className="fa-regular fa-circle-play text-lg" /> View Demo
-            </button>
-          </div> */}
-        </div>
-
-        {/* Gambar Kanan */}
-        <div className="hidden lg:block lg:-mr-16 w-1/3">
-          <img
-            src="/image/women red 2 1.png"
-            alt="women in red holding laptop"
-            className="w-full object-contain"
-          />
-        </div>
-      </div>
+    <section className="mx-auto pt-12 px-4 max-w-screen-xl">
+      <Slider {...settings}>
+        {slides.map((image, index) => (
+          <div key={index} className="flex justify-center">
+            <img
+              src={image}
+              alt={`slide-${index + 1}`}
+              className="w-full object-contain"
+            />
+          </div>
+        ))}
+      </Slider>
     </section>
   );
 }

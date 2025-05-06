@@ -6,11 +6,12 @@ import Privacy from "./assets/pages/Privacy";
 import TermAndCondition from "./assets/pages/TermAndCondition";
 import Calculator from "./assets/components/Misc/Calculator";
 import TermsModal from "./assets/components/TermsAndConditions/TermsModal";
+import Guide from "./assets/components/Misc/Guide";
 
 function App() {
   return (
     <div className="bg-base-100">
-      <TermsModal />
+      {/* <TermsModal /> */}
       <Routes>
         {/* Route khusus login tanpa layout */}
         <Route path="/login" />
@@ -45,6 +46,14 @@ function App() {
           element={
             <Layout>
               <Calculator />
+            </Layout>
+          }
+        />
+        <Route
+          path="/panduan"
+          element={
+            <Layout>
+              <Guide />
             </Layout>
           }
         />

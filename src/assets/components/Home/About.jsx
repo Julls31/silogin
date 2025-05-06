@@ -15,10 +15,10 @@ function About() {
         </div>
 
         {/* Konten dengan background */}
-        <section
+        {/* <section
           className="bg-cover bg-center rounded-lg py-0 px-0 md:py-24 md:px-8"
           style={{ backgroundImage: "url(/image/table_bg.png)" }}
-        >
+        > */}
           {/* Content */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-base-100">
             {/* Image */}
@@ -53,7 +53,7 @@ function About() {
               </div>
             </div>
           </div>
-        </section>
+        {/* </section> */}
       </div>
     </div>
   );

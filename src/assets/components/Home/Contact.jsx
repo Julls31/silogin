@@ -20,10 +20,10 @@ function Contact() {
           </div>
 
           {/* Content Section with Background */}
-          <section
+          {/* <section
             className="bg-cover bg-center rounded-lg py-0 px-0 md:py-24 md:px-8"
             style={{ backgroundImage: "url(/image/table_bg.png)" }}
-          >
+          > */}
             {/* Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/** Array of card data */}
@@ -32,7 +32,7 @@ function Contact() {
                   icon: "fa fa-phone",
                   title: "Telepon",
                   content:
-                    "Hubungi kami di [0821-2176-3671]. Layanan telepon kami tersedia Senin s/d Jum’at.",
+                    "Hubungi kami di [0821-2176-3671]. Layanan telepon kami tersedia Senin s/d Jum’at jam 09.00 s/d 18.00 WIB",
                 },
                 {
                   icon: "fa-regular fa-envelope",
@@ -91,7 +91,7 @@ function Contact() {
                 </div>
               ))}
             </div>
-          </section>
+          {/* </section> */}
           {/* <div className="flex justify-center mt-8 lg:mt-4 space-x-4">
             <Link to="https://dev.rynest-technology.com:4443/">
               <button className="btn btn-primary rounded-3xl flex items-center gap-2">

@@ -110,7 +110,7 @@ function PrivacyPolicy() {
                         Informasi yang dapat Anda berikan meliputi: nama
                         perusahaan, nama penanggung jawab, Nomor Induk Berusaha
                         (NIB), alamat, alamat email, nomor telepon yang dapat
-                        dihubungi, nomor rekening, serta data administratif
+                        dihubungi, serta data administratif
                         lainnya yang diperlukan untuk keperluan validasi dan
                         pemberian perlindungan asuransi. Kami dapat meminta Anda
                         melakukan verifikasi untuk memastikan keakuratan

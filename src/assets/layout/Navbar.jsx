@@ -107,24 +107,29 @@ function Navbar() {
           >
             Kontak
           </button>
+          <Link to ="/panduan">
+            <button className="block lg:inline-block text-gray-800 hover:text-black py-2">
+              Panduan
+            </button>
+          </Link>
           <Link to="/kalkulatorpremi">
-          {/* <button
+            {/* <button
             className="block lg:inline-block text-gray-600 hover:text-black py-2"
           >
             Calculator
             </button> */}
-            </Link>
+          </Link>
           <div className="flex flex-col lg:flex-row lg:space-x-4 mt-4 space-y-2 lg:space-y-0 lg:mt-0">
             <Link to="https://dev.rynest-technology.com:4442/">
-            <button className="btn btn-outline border-[#DEE1E6] text-[#000] hover:text-black hover:bg-[#DEE1E6] hover:border-[#DEE1E6]">
-              <i className="fa fa-headset" /> Customer Care / Klaim
+              <button className="btn btn-outline border-[#DEE1E6] text-[#000] hover:text-black hover:bg-[#DEE1E6] hover:border-[#DEE1E6]">
+                <i className="fa fa-headset" /> Customer Care / Klaim
               </button>
             </Link>
             <Link to="https://dev.rynest-technology.com:4443/">
-            <button className="btn bg-[#DB1F26] text-white hover:bg-[#b51a20]">
-              Masuk / Daftar
+              <button className="btn bg-[#DB1F26] text-white hover:bg-[#b51a20]">
+                Masuk / Daftar
               </button>
-              </Link>
+            </Link>
           </div>
         </div>
       </div>

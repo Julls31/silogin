@@ -33,10 +33,10 @@ function FAQ() {
         </div>
 
         {/* Desktop Layout */}
-        <section
+        {/* <section
           className="bg-cover bg-center rounded-lg py-0 px-0 md:py-24 md:px-8"
           style={{ backgroundImage: "url(/image/table_bg.png)" }}
-        >
+        > */}
           <div className="hidden lg:flex relative gap-8">
             {/* Questions Card */}
             <div
@@ -96,7 +96,7 @@ function FAQ() {
               <p className="text-gray-500">{answers[activeQuestion]}</p>
             </div>
           </div>
-        </section>
+        {/* </section> */}
 
         {/* Mobile Layout */}
         <div className="lg:hidden">
