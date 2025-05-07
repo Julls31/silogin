@@ -1,0 +1,25 @@
+/* intro.css */
+.custom-dots {
+    display: flex !important;
+    justify-content: center;
+    margin-top: 15px;
+    padding-bottom: 5px;
+  }
+  
+  .custom-dots li {
+    margin: 0 6px;
+  }
+  
+  .custom-dots li button::before {
+    font-size: 12px;
+    color: #ddd;
+    opacity: 1;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .custom-dots li.slick-active button::before {
+    color: #DB1F26;
+    font-size: 18px;
+    transform: scale(1.2);
+  }
+  

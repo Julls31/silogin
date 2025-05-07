@@ -24,6 +24,13 @@ function Navbar() {
     }
   };
 
+  const handleLogoClick = () => {
+    navigate("/");
+    setTimeout(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }, 100);
+  };
+
   // Close menu jika user klik di luar menu
   const handleOutsideClick = (e) => {
     if (
@@ -46,13 +53,9 @@ function Navbar() {
     <nav className="bg-white fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
-        <a
-          href="#"
-          onClick={() => handleScroll("home", "/")}
-          className="flex items-center"
-        >
+        <button onClick={handleLogoClick} className="flex items-center">
           <img src="/image/logo1.png" alt="logo" className="w-auto" />
-        </a>
+        </button>
 
         {/* Toggle Button for Mobile */}
         <button
@@ -107,11 +110,11 @@ function Navbar() {
           >
             Kontak
           </button>
-          <Link to ="/panduan">
+          {/* <Link to ="/panduan">
             <button className="block lg:inline-block text-gray-800 hover:text-black py-2">
               Panduan
             </button>
-          </Link>
+          </Link> */}
           <Link to="/kalkulatorpremi">
             {/* <button
             className="block lg:inline-block text-gray-600 hover:text-black py-2"

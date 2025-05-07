@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Footer() {
   const navigate = useNavigate();
@@ -59,13 +59,21 @@ function Footer() {
 
           {/* Help Section */}
           <div className="lg:ml-16">
-            <h6 className="font-semibold text-red-500 mb-2">BANTUAN</h6>
+            <h6 className="font-semibold text-red-500 mb-2">PANDUAN</h6>
             <ul className="space-y-1 text-sm">
               <li>
-                <button className="hover:text-red-500">Panduan Pembeli</button>
+                <Link to="/panduan-pembeli">
+                  <button className="hover:text-red-500">
+                    Panduan Pembeli
+                  </button>
+                </Link>
               </li>
               <li>
-                <button className="hover:text-red-500">Panduan Penyedia</button>
+                <Link to="/panduan-penyedia">
+                  <button className="hover:text-red-500">
+                    Panduan Penyedia
+                  </button>
+                </Link>
               </li>
               <li>
                 <button className="hover:text-red-500">FAQ Pembeli</button>
@@ -120,7 +128,7 @@ function Footer() {
 
           {/* Social Media */}
           <div className="lg:ml-8">
-            <h6 className="font-semibold text-red-500 mb-2">SOCIAL MEDIA</h6>
+            <h6 className="font-semibold text-red-500 mb-2">IKUTI KAMI</h6>
             <div className="flex justify-center md:justify-start space-x-4">
               <a
                 href="https://facebook.com"

@@ -4,6 +4,7 @@ function Services() {
   return (
     <div className="container mx-auto px-4">
       <div className="bg-base-100 lg:p-8 pt-8 rounded-lg">
+        {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-lg font-semibold text-gray-500 uppercase mb-8 tracking-wide">
             layanan
@@ -13,14 +14,15 @@ function Services() {
           </h1>
         </div>
 
+        {/* Content Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Card 3 */}
           <div className="p-6 border rounded-lg bg-white flex flex-col md:flex-row">
             <div className="flex-1">
-              <h3 className="text-lg font-semibold text-gray-700">
+              <h3 className="text-lg font-semibold text-gray-700 text-center md:text-left">
                 KEMUDAHAN <span className="text-red-600">PEMBELIAN</span>
               </h3>
-              <p className="text-gray-600 mt-4 w-[90%]">
+              <p className="text-gray-600 mt-4 w-[90%] sm:leading-relaxed sm:text-justify leading-normal text-left md:leading-normal md:text-left">
                 Proses pembelian asuransi SiLogin mudah dan cepat bagi penyedia
                 untuk dapat mengetahui premi yang dibayarkan.
               </p>
@@ -35,10 +37,10 @@ function Services() {
           {/* Card 4 */}
           <div className="p-6 border rounded-lg bg-white flex flex-col md:flex-row">
             <div className="flex-1">
-              <h3 className="text-lg font-semibold text-gray-700">
+              <h3 className="text-lg font-semibold text-gray-700 text-center md:text-left">
                 KEMUDAHAN <span className="text-red-600">KLAIM</span>
               </h3>
-              <p className="text-gray-600 mt-4">
+              <p className="text-gray-600 mt-4 w-[90%] sm:leading-relaxed sm:text-justify leading-normal text-left md:leading-normal md:text-left">
                 Proses pengajuan klaim asuransi tidak banyak memerlukan dokumen,
                 semua sudah ada didalam sistem.
               </p>

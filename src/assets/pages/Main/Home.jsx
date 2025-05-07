@@ -4,53 +4,65 @@ import About from "../../components/Home/About";
 import Services from "../../components/Home/Services";
 import Contact from "../../components/Home/Contact";
 import FAQ from "../../components/Home/FAQ";
-import ContactUs from "../../components/ContactUs";
 import { Link } from "react-router-dom";
 import Product from "../../components/Home/Product";
+import Policy from "../../components/Home/Policy";
+import Polis from "../../components/Home/Polis";
 
 function Home() {
   return (
     <>
-      <div id="home" className="bg-base-100">
-        <div className="max-w-screen-xl mx-auto px-4 mt-10 lg:-mb-10">
-          <Intro />
-        </div>
+      {/* Intro Full Width */}
+      <div id="home" className="">
+        <Intro />
       </div>
+
+      {/* About */}
       <div id="about" className="bg-base-100">
         <div className="max-w-screen-lg mx-auto px-4 my-10">
           <About />
         </div>
       </div>
+
+      {/* Product */}
       <div id="product" className="bg-base-100">
         <div className="max-w-screen-xl mx-auto px-4 my-10">
           <Product />
         </div>
       </div>
+
+      {/* Policy */}
+      <div className="bg-base-100">
+        <div className="max-w-screen-lg mx-auto px-4">
+          <Policy />
+        </div>
+      </div>
+
+      {/* Services */}
       <div id="services" className="bg-base-100">
         <div className="max-w-screen-xl mx-auto px-4 my-10">
           <Services />
         </div>
       </div>
+
+      {/* Contact */}
       <div id="contact" className="bg-base-100">
         <div className="max-w-screen-xl mx-auto px-4 my-10">
           <Contact />
         </div>
       </div>
+
+      {/* Polis */}
       <div className="bg-base-100">
-        <div className="max-w-screen-xl mx-auto px-4 my-10">
-          <FAQ />
+        <div className="max-w-screen-lg mx-auto px-4 my-10">
+          <Polis />
         </div>
       </div>
-      {/* <div className="bg-base-200">
-        <div className="max-w-screen-lg mx-auto my-10">
-          <ContactUs />
-        </div>
-      </div> */}
+
+      {/* Floating Button */}
       <Link to="/kalkulatorpremi">
         <button className="fixed bottom-16 right-4 z-50 btn btn-sm btn-outline btn-primary">
-          {/* Desktop view with text */}
           <span className="hidden sm:inline">Kalkulator Premi</span>
-          {/* Mobile/tablet view with icon */}
           <i className="fa fa-calculator sm:hidden"></i>
         </button>
       </Link>

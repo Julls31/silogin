@@ -9,50 +9,73 @@ function About() {
           <h2 className="text-lg font-semibold text-gray-500 uppercase mb-8 tracking-wide">
             Tentang
           </h2>
-          <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600">
-            Apa Itu <span className="text-red-600">SILOGIN</span> ?
-          </h1>
+          <div className="flex flex-wrap items-center justify-center space-x-3">
+            <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600">
+              Apa Itu
+            </h1>
+            <img
+              src="/image/siLoginTagline.png"
+              alt="SiLogin Tagline"
+              className="h-10 w-auto"
+            />
+            <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600">
+              ?
+            </h1>
+          </div>
         </div>
+        <p className="text-gray-700 text-lg leading-relaxed text-center px-4 md:px-0 py-4 lg:py-0">
+          Program Asuransi yang memberikan perlindungan asuransi dengan cepat
+          dan mudah bagi Penyedia / Vendor dalam bertransaksi atas pembelian
+          barang oleh Pemerintah (Lembaga / Kementerian / Pemerintah Daerah -
+          LKPD) di e-catalogue melalui sistem aplikasi
+          <strong className="text-red-600"> SiLogin</strong>.
+        </p>
 
         {/* Konten dengan background */}
         {/* <section
           className="bg-cover bg-center rounded-lg py-0 px-0 md:py-24 md:px-8"
           style={{ backgroundImage: "url(/image/table_bg.png)" }}
         > */}
-          {/* Content */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-base-100">
-            {/* Image */}
-            <div className="text-center">
-              <img
-                src="/image/siLoginTagline.png"
-                alt="SiLogin Tagline"
-                className="w-full max-w-md mx-auto px-4 lg:px-0"
-              />
-            </div>
-
-            {/* Description */}
-            <div className="text-gray-700 text-lg leading-relaxed text-justify px-4 md:px-0 py-4 lg:py-0">
-              <p>
-              Program Asuransi yang memberikan perlindungan asuransi dengan
-                cepat dan mudah bagi Penyedia / Vendor dalam bertransaksi atas
-                pembelian barang oleh Pemerintah (Lembaga / Kementerian /
-                Pemerintah Daerah - LKPD) di e-catalogue melalui sistem aplikasi
-                <strong className="text-red-600"> SiLogin</strong>.
-              </p>
-              <div className="mt-4">
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">
-                  Tujuan Asuransi SILOGIN:
-                </h3>
-                <ul className="list-disc list-inside space-y-2 text-gray-600">
-                  <li>Perlindungan keuangan negara</li>
-                  <li>Penjaminan kualitas pengadaan</li>
-                  <li>Peningkatan efisiensi sistem</li>
-                  <li>Standarisasi perlindungan</li>
-                  <li>Optimalisasi e-catalogue</li>
-                </ul>
-              </div>
-            </div>
+        <div className="flex flex-col md:flex-row items-center lg:items-start bg-base-100 py-4">
+          {/* Image */}
+          <div className="flex-shrink-0 p-4 lg:pl-0 md:mr-16 md:ml-10 lg:ml-16">
+            <img
+              src="/image/laptop.png"
+              alt="SiLogin Tagline"
+              className="w-full md:w-60 max-w-md"
+            />
           </div>
+
+          {/* Description */}
+          <div className="text-gray-700 text-lg leading-relaxed flex-grow px-4 md:px-0 py-4 lg:pt-8">
+            <h3 className="text-xl font-semibold mb-4 text-gray-800">
+              Tujuan Asuransi <span className="text-red-600">SiLogin</span>:
+            </h3>
+            <ul className="text-gray-600">
+              <li className="flex items-start gap-3">
+                <i className="fa-solid fa-check-circle text-red-600 text-xl mt-1"></i>
+                <span>Perlindungan keuangan negara</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <i className="fa-solid fa-check-circle text-red-600 text-xl mt-1"></i>
+                <span>Penjaminan kualitas pengadaan</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <i className="fa-solid fa-check-circle text-red-600 text-xl mt-1"></i>
+                <span>Peningkatan efisiensi sistem</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <i className="fa-solid fa-check-circle text-red-600 text-xl mt-1"></i>
+                <span>Standarisasi perlindungan</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <i className="fa-solid fa-check-circle text-red-600 text-xl mt-1"></i>
+                <span>Optimalisasi e-catalogue</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         {/* </section> */}
       </div>
     </div>

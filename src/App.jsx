@@ -5,8 +5,9 @@ import Home from "./assets/pages/Main/Home";
 import Privacy from "./assets/pages/Privacy";
 import TermAndCondition from "./assets/pages/TermAndCondition";
 import Calculator from "./assets/components/Misc/Calculator";
-import TermsModal from "./assets/components/TermsAndConditions/TermsModal";
-import Guide from "./assets/components/Misc/Guide";
+// import TermsModal from "./assets/components/TermsAndConditions/TermsModal";
+import GuideUser from "./assets/components/Guides/GuideUser";
+import GuideVendor from "./assets/components/Guides/GuideVendor";
 
 function App() {
   return (
@@ -50,10 +51,18 @@ function App() {
           }
         />
         <Route
-          path="/panduan"
+          path="/panduan-pembeli"
           element={
             <Layout>
-              <Guide />
+              <GuideUser />
+            </Layout>
+          }
+        />
+        <Route
+          path="/panduan-penyedia"
+          element={
+            <Layout>
+              <GuideVendor />
             </Layout>
           }
         />
