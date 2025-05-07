@@ -8,6 +8,8 @@ import Calculator from "./assets/components/Misc/Calculator";
 // import TermsModal from "./assets/components/TermsAndConditions/TermsModal";
 import GuideUser from "./assets/components/Guides/GuideUser";
 import GuideVendor from "./assets/components/Guides/GuideVendor";
+import FAQUser from "./assets/components/FAQ/FAQUser";
+import FAQVendor from "./assets/components/FAQ/FAQVendor";
 
 function App() {
   return (
@@ -63,6 +65,22 @@ function App() {
           element={
             <Layout>
               <GuideVendor />
+            </Layout>
+          }
+        />
+         <Route
+          path="/faq-pembeli"
+          element={
+            <Layout>
+              <FAQUser />
+            </Layout>
+          }
+        />
+         <Route
+          path="/faq-penyedia"
+          element={
+            <Layout>
+              <FAQVendor />
             </Layout>
           }
         />
