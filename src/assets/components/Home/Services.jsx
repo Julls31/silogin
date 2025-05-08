@@ -22,7 +22,7 @@ function Services() {
               <h3 className="text-lg font-semibold text-gray-700 text-center md:text-left">
                 KEMUDAHAN <span className="text-red-600">PEMBELIAN</span>
               </h3>
-              <p className="text-gray-600 mt-4 w-[90%] sm:leading-relaxed sm:text-justify leading-normal text-left md:leading-normal md:text-left">
+              <p className="text-gray-600 mt-4 md:w-[90%] sm:leading-relaxed sm:text-justify leading-normal text-center  md:leading-normal md:text-left">
                 Proses pembelian asuransi SiLogin mudah dan cepat bagi penyedia
                 untuk dapat mengetahui premi yang dibayarkan.
               </p>
@@ -40,7 +40,7 @@ function Services() {
               <h3 className="text-lg font-semibold text-gray-700 text-center md:text-left">
                 KEMUDAHAN <span className="text-red-600">KLAIM</span>
               </h3>
-              <p className="text-gray-600 mt-4 w-[90%] sm:leading-relaxed sm:text-justify leading-normal text-left md:leading-normal md:text-left">
+              <p className="text-gray-600 mt-4 md:w-[90%] sm:leading-relaxed sm:text-justify leading-normal text-center md:leading-normal md:text-left">
                 Proses pengajuan klaim asuransi tidak banyak memerlukan dokumen,
                 semua sudah ada didalam sistem.
               </p>

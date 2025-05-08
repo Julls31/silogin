@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
 
@@ -24,6 +26,23 @@ function Navbar() {
       document.removeEventListener("click", handleOutsideClick);
     };
   }, [isOpen]);
+
+  const handleScroll = (id, path) => {
+    if (location.pathname !== path) {
+      navigate(path);
+      setTimeout(() => {
+        const section = document.getElementById(id);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 100); // Delay untuk memastikan halaman sudah berpindah
+    } else {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  };
 
   return (
     <nav className="bg-base-100 fixed top-0 left-0 w-full z-50 ">
@@ -62,18 +81,30 @@ function Navbar() {
               : "opacity-0 -translate-y-5 pointer-events-none"
           } lg:opacity-100 lg:translate-y-0 lg:pointer-events-auto w-full lg:w-auto absolute lg:relative bg-white lg:bg-transparent top-16 left-0 lg:top-auto lg:left-auto px-6 py-4 lg:p-0`}
         >
-          <Link to="/" className="block lg:inline-block text-gray-800 hover:text-black py-2">
+          <button
+            onClick={() => handleScroll("about", "/")}
+            className="block lg:inline-block text-gray-800 hover:text-black py-2"
+          >
             Tentang
-          </Link>
-          <Link to="/product" className="block lg:inline-block text-gray-800 hover:text-black py-2">
+          </button>
+          <button
+            onClick={() => handleScroll("product", "/")}
+            className="block lg:inline-block text-gray-800 hover:text-black py-2"
+          >
             Produk
-          </Link>
-          <Link to="/services" className="block lg:inline-block text-gray-800 hover:text-black py-2">
+          </button>
+          <button
+            onClick={() => handleScroll("services", "/")}
+            className="block lg:inline-block text-gray-800 hover:text-black py-2"
+          >
             Layanan
-          </Link>
-          <Link to="/contact" className="block lg:inline-block text-gray-800 hover:text-black py-2">
+          </button>
+          <button
+            onClick={() => handleScroll("contact", "/")}
+            className="block lg:inline-block text-gray-800 hover:text-black py-2"
+          >
             Kontak
-          </Link>
+          </button>
 
           {/* Dropdown Menu - Desktop */}
           <div className="hidden lg:block relative">
@@ -110,10 +141,10 @@ function Navbar() {
                   Panduan Penyedia
                 </Link>
                 <Link to="/faq-pembeli" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
-                  FAQ Pembeli
+                  FAQ Pembeli { ""} <i className="fa fa-triangle-exclamation text-red-500"/>
                 </Link>
                 <Link to="/faq-penyedia" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
-                  FAQ Penyedia
+                  FAQ Penyedia  { ""} <i className="fa fa-triangle-exclamation text-red-500"/>
                 </Link>
               </div>
             )}
@@ -153,10 +184,10 @@ function Navbar() {
                   Panduan Penyedia
                 </Link>
                 <Link to="/faq-pembeli" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
-                  FAQ Pembeli
+                  FAQ Pembeli { ""} <i className="fa fa-triangle-exclamation text-red-500"/>
                 </Link>
                 <Link to="/faq-penyedia" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
-                  FAQ Penyedia
+                  FAQ Penyedia { ""} <i className="fa fa-triangle-exclamation text-red-500"/>
                 </Link>
               </div>
             )}

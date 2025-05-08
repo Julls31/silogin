@@ -33,7 +33,7 @@ function Policy() {
                 <h3 className="text-xl font-semibold text-red-600 text-center md:text-left">
                   Seksi 2
                 </h3>
-                <p>
+                <p className="text-center md:text-left">
                   Produk makanan, minuman & tembakau; tekstil, pakaian & produk kulit
                 </p>
               </div>
@@ -41,7 +41,7 @@ function Policy() {
                 <h3 className="text-xl font-semibold text-red-600 text-center md:text-left">
                   Seksi 3
                 </h3>
-                <p>
+                <p className="text-center md:text-left">
                   Barang lainnya yang dapat diangkut, kecuali produk logam, mesin dan perlengkapannya
                 </p>
               </div>
@@ -49,7 +49,7 @@ function Policy() {
                 <h3 className="text-xl font-semibold text-red-600 text-center md:text-left">
                   Seksi 4
                 </h3>
-                <p>
+                <p className="text-center md:text-left">
                   Produk logam, mesin dan perlengkapannya
                 </p>
               </div>

@@ -29,7 +29,7 @@ function Footer() {
           {/* Collaboration Section */}
           <div>
             <h6 className="font-semibold text-red-500">BEKERJASAMA DENGAN</h6>
-            <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-2">
+            <div className="flex flex-wrap justify-center md:justify-start">
               <a
                 href="https://lkpp.go.id"
                 target="_blank"
@@ -39,7 +39,7 @@ function Footer() {
                 <img
                   src="/image/lkpp.png"
                   alt="LKPP"
-                  className="h-16 object-contain"
+                  className="h-14 object-contain lg:-ml-2"
                 />
               </a>
               <a
@@ -51,7 +51,7 @@ function Footer() {
                 <img
                   src="/image/inaproc.png"
                   alt="INAPROC"
-                  className="h-10 object-contain"
+                  className="h-8 object-contain mt-3 lg:mt-0"
                 />
               </a>
             </div>

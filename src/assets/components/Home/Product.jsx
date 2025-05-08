@@ -22,7 +22,7 @@ function Product() {
               <h3 className="text-lg font-semibold text-gray-700 text-center md:text-left">
                 ASURANSI <span className="text-red-600">PENGIRIMAN</span>
               </h3>
-              <p className="text-gray-600 mt-4 sm:leading-relaxed sm:text-justify leading-normal text-left md:leading-normal md:text-left">
+              <p className="text-gray-600 mt-4 sm:leading-relaxed sm:text-justify leading-normal text-center md:leading-normal md:text-left">
                 Asuransi ini menjamin risiko kerusakan atau kehilangan
                 terhadap barang selama dalam pengiriman, dari sejak barang itu
                 dikirimkan oleh Penyedia / vendor hingga diterima oleh
@@ -45,7 +45,7 @@ function Product() {
                   MOVEABLE PROPERTY ALL RISKS (MPAR)
                 </span>
               </h3>
-              <p className="text-gray-600 mt-4 w-[90%] sm:leading-relaxed sm:text-justify leading-normal text-left md:leading-normal md:text-left">
+              <p className="text-gray-600 mt-4 md:w-[90%] sm:leading-relaxed sm:text-justify leading-normal text-center md:leading-normal md:text-left">
                 Asuransi ini menjamin kerusakan atau kehilangan terhadap
                 barang yang dipertanggungkan selama masa pertanggungan
                 asuransi atas semua risiko, kecuali yang dikecualikan dalam
@@ -64,23 +64,23 @@ function Product() {
         <div className="flex flex-wrap justify-center gap-6 items-center mt-8">
           <img
             src="/image/aswata.png"
-            alt="GRM"
-            className="h-14 md:h-48 object-contain"
+            alt="aswata"
+            className="h-24 md:h-48 object-contain"
           />
           <img
             src="/image/fpg.png"
-            alt="Kokonut"
-            className="h-14 md:h-48 object-contain"
+            alt="fpg"
+            className="h-24 md:h-48 object-contain"
           />
           <img
             src="/image/tripa.png"
-            alt="GRM"
-            className="h-14 md:h-48 object-contain"
+            alt="tripa"
+            className="h-24 md:h-48 object-contain"
           />
           <img
             src="/image/tugu.png"
-            alt="Kokonut"
-            className="h-14 md:h-48 object-contain"
+            alt="tugu"
+            className="h-24 md:h-48 object-contain"
           />
         </div>
       </div>

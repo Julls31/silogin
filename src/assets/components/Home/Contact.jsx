@@ -61,7 +61,7 @@ function Contact() {
 
                 {/* Card Content */}
                 <div className="flex-1">
-                  <p className="text-gray-600 mb-8 sm:leading-relaxed sm:text-justify leading-normal text-left md:leading-normal md:text-left">
+                  <p className="text-gray-600 mb-8 sm:leading-relaxed sm:text-justify leading-normal text-center md:leading-normal md:text-left">
                     {card.content}
                   </p>
                 </div>

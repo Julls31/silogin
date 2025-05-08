@@ -16,7 +16,7 @@ function Polis() {
           </div>
 
           {/* Description */}
-          <p className="text-lg leading-relaxed text-justify md:text-center px-4 md:px-0 py-0">
+          <p className="text-lg text-center px-4 md:px-0 py-0">
             Dokumen tertulis yang menjelaskan secara rinci syarat, ketentuan,
             jaminan (pertanggungan), pengecualian, dan prosedur klaim dari suatu
             produk asuransi. Ini adalah bagian utama dari polis asuransi yang
@@ -29,7 +29,7 @@ function Polis() {
             <form className="flex flex-col md:flex-row items-center gap-4 w-full">
               {/* Nomor Polis */}
               <div className="flex flex-col w-full ">
-                <label className="text-gray-700 mb-2 font-semibold">
+                <label className="text-gray-700 mb-2 font-semibold text-center md:text-left">
                   Nomor Polis
                 </label>
                 <input
@@ -41,7 +41,7 @@ function Polis() {
 
               {/* Email */}
               <div className="flex flex-col w-full ">
-                <label className="text-gray-700 mb-2 font-semibold">
+                <label className="text-gray-700 mb-2 font-semibold text-center md:text-left">
                   Email
                 </label>
                 <input
