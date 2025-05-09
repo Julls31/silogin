@@ -10,6 +10,7 @@ import GuideUser from "./assets/components/Guides/GuideUser";
 import GuideVendor from "./assets/components/Guides/GuideVendor";
 import FAQUser from "./assets/components/FAQ/FAQUser";
 import FAQVendor from "./assets/components/FAQ/FAQVendor";
+import NotFound from "./assets/components/Misc/404NotFound";
 
 function App() {
   return (
@@ -81,6 +82,14 @@ function App() {
           element={
             <Layout>
               <FAQVendor />
+            </Layout>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <Layout>
+              <NotFound />
             </Layout>
           }
         />
