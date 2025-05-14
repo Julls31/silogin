@@ -60,7 +60,7 @@ function Polis() {
                   type="submit"
                   className="flex items-center justify-center bg-red-600 text-white rounded-lg p-3 hover:bg-red-700 transition duration-300 w-full md:w-auto"
                 >
-                  <i className="fa fa-paper-plane" />
+                  <i className="fa fa-paper-plane py-1" />
                 </button>
               </div>
             </form>

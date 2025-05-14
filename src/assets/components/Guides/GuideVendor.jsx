@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 
 function GuideVendor() {
   const penyediaVideos = [
-    { title: "Panduan Penyedia 1", videoId: "dQw4w9WgXcQ" },
-    { title: "Panduan Penyedia 2", videoId: "9xwazD5SyVg" },
+    { title: "Panduan Penyedia 1", videoId: "yAoLSRbwxL8" },
+    { title: "Panduan Penyedia 2", videoId: "yAoLSRbwxL8" },
     { title: "Panduan Penyedia 3", videoId: "yAoLSRbwxL8" },
-    { title: "Panduan Penyedia 4", videoId: "JnYumoitCno" },
+    { title: "Panduan Penyedia 4", videoId: "yAoLSRbwxL8" },
   ];
 
   const [selectedVideo, setSelectedVideo] = useState(null);

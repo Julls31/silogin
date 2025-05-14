@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Swal from 'sweetalert2';
+import Swal from "sweetalert2";
 
 function Calculator() {
   const [kodeBarang, setKodeBarang] = useState("");
@@ -21,12 +21,28 @@ function Calculator() {
     const nilai = parseInt(nilaiBarang.replace(/[^\d]/g, ""));
     if (!kodeBarang || isNaN(nilai)) {
       Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: 'Kode barang atau nilai tidak valid.',
+        icon: "error",
+        title: "Oops...",
+        text: "Kode barang atau nilai tidak valid.",
       });
       return;
     }
+
+    // Tampilkan konfirmasi sebelum melanjutkan
+    const confirm = await Swal.fire({
+      title: "Konfirmasi",
+      html: `Apakah kode KBKI "<b>${kodeBarang}</b>" dan Nilai Barang <b>${formatRupiah(
+        nilai
+      )}</b> sudah benar?`,
+      icon: "question",
+      showCancelButton: true,
+      confirmButtonText: "Ya, Lanjutkan",
+      cancelButtonText: "Batal",
+      confirmButtonColor: "#DB1F26",
+      cancelButtonColor: "#6c757d",
+    });
+
+    if (!confirm.isConfirmed) return;
 
     setLoading(true);
     setHasil(null);
@@ -48,8 +64,10 @@ function Calculator() {
       });
 
       if (!response.ok) {
-        const errText = await response.text();
-        throw new Error("Gagal menghitung premi.");
+        setHasil({
+          error: "Kode KBKI yang Anda masukkan belum tersedia",
+        });
+        return;
       }
 
       const result = await response.json();
@@ -63,12 +81,10 @@ function Calculator() {
           result.premium_mpar === 0.0
             ? "Premi Asuransi ini sudah termasuk dengan premi Asuransi Pengiriman (Cargo)"
             : "Premi Asuransi ini sudah termasuk dengan premi Asuransi Moveable Property All Risk (MPAR) dan Asuransi Pengiriman (Cargo)",
-      });      
+      });
     } catch (error) {
-      Swal.fire({
-        icon: 'error',
-        title: 'Terjadi Kesalahan',
-        text: 'Terjadi kesalahan saat menghitung premi atau kode barang tidak ditemukan.',
+      setHasil({
+        error: "Terjadi kesalahan saat menghitung premi.",
       });
     } finally {
       setLoading(false);
@@ -77,13 +93,14 @@ function Calculator() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-
+  }, []);
 
   return (
     <div className="p-4 mx-auto min-h-screen py-24">
       <div className="mb-4">
-        <h1 className="text-2xl font-semibold">Kalkulator Perhitungan Premi Asuransi</h1>
+        <h1 className="text-2xl font-semibold">
+          Kalkulator Perhitungan Indikatif Premi Asuransi
+        </h1>
       </div>
 
       {/* Form */}
@@ -130,30 +147,37 @@ function Calculator() {
             <span className="flex-1 h-px bg-gray-300"></span>
           </h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-red-100 p-4 rounded border-l-4 border-red-500">
-            <div>
-              <p className="font-semibold">Kode Barang:</p>
-              <p className="text-red-700 font-bold mb-2">{hasil.kode}</p>
-
-              <p className="font-semibold">Nama Barang:</p>
-              <p className="text-red-700 font-bold mb-2">{hasil.nama}</p>
-
-              <p className="font-semibold">Harga Barang:</p>
-              <p className="text-red-700 font-bold mb-2">
-                {formatRupiah(hasil.nilai)}
-              </p>
+          {/* Pesan Error jika Kode Tidak Ditemukan */}
+          {hasil.error ? (
+            <div className="bg-yellow-100 text-yellow-800 p-4 rounded border-l-4 border-yellow-500">
+              <p className="font-semibold">{hasil.error}</p>
             </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-red-100 p-4 rounded border-l-4 border-red-500">
+              <div>
+                <p className="font-semibold">Kode Barang:</p>
+                <p className="text-red-700 font-bold mb-2">{hasil.kode}</p>
 
-            <div>
-              <p className="font-semibold">Nilai Premi Asuransi:</p>
-              <p className="text-red-700 font-bold text-xl mb-4">
-                {formatRupiah(hasil.premi)}
-              </p>
+                <p className="font-semibold">Nama Barang:</p>
+                <p className="text-red-700 font-bold mb-2">{hasil.nama}</p>
 
-              <p className="font-semibold">Deskripsi Asuransi</p>
-              <p className="text-gray-700">{hasil.deskripsi}</p>
+                <p className="font-semibold">Harga Barang:</p>
+                <p className="text-red-700 font-bold mb-2">
+                  {formatRupiah(hasil.nilai)}
+                </p>
+              </div>
+
+              <div>
+                <p className="font-semibold">Nilai Premi Asuransi:</p>
+                <p className="text-red-700 font-bold text-xl mb-4">
+                  {formatRupiah(hasil.premi)}
+                </p>
+
+                <p className="font-semibold">Deskripsi Asuransi</p>
+                <p className="text-gray-700">{hasil.deskripsi}</p>
+              </div>
             </div>
-          </div>
+          )}
         </div>
       )}
     </div>

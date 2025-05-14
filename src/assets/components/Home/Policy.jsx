@@ -30,7 +30,7 @@ function Policy() {
           <div className="flex-grow text-gray-700 leading-relaxed text-justify px-4 md:px-0 py-4 lg:py-2 md:mr-6 lg:mr-0">
             <div className="grid grid-cols-1 md:grid-cols-1 gap-2">
               <div>
-                <h3 className="text-xl font-semibold text-red-600 text-center md:text-left">
+                <h3 className="text-xl font-semibold text-red-600 text-center md:text-left uppercase">
                   Seksi 2
                 </h3>
                 <p className="text-center md:text-left">
@@ -38,7 +38,7 @@ function Policy() {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-red-600 text-center md:text-left">
+                <h3 className="text-xl font-semibold text-red-600 text-center md:text-left uppercase">
                   Seksi 3
                 </h3>
                 <p className="text-center md:text-left">
@@ -46,7 +46,7 @@ function Policy() {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-red-600 text-center md:text-left">
+                <h3 className="text-xl font-semibold text-red-600 text-center md:text-left uppercase">
                   Seksi 4
                 </h3>
                 <p className="text-center md:text-left">

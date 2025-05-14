@@ -58,7 +58,7 @@ function Footer() {
           </div>
 
           {/* Help Section */}
-          <div className="lg:ml-16">
+          <div className="lg:ml-8">
             <h6 className="font-semibold text-red-500 mb-2">PANDUAN</h6>
             <ul className="space-y-1 text-sm">
               <li>
@@ -104,7 +104,7 @@ function Footer() {
           </div>
 
           {/* Legal Section */}
-          <div className="lg:ml-16">
+          <div className="lg:ml-8">
             <h6 className="font-semibold text-red-500 mb-2">KETENTUAN HUKUM</h6>
             <ul className="space-y-1 text-sm">
               <li>

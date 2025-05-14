@@ -15,6 +15,7 @@ export default {
           '100%': { opacity: 1, transform: 'translateY(0)' },
         },
       },
+       scrollBehavior: ['responsive', 'motion-safe', 'motion-reduce'],
     },
   },
   plugins: [require('daisyui','@tailwindcss/aspect-ratio'),

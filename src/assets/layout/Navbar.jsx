@@ -28,18 +28,25 @@ function Navbar() {
   }, [isOpen]);
 
   const handleScroll = (id, path) => {
+    const NAVBAR_HEIGHT = 60;
     if (location.pathname !== path) {
       navigate(path);
       setTimeout(() => {
         const section = document.getElementById(id);
         if (section) {
-          section.scrollIntoView({ behavior: "smooth", block: "start" });
+          const yOffset = -NAVBAR_HEIGHT;
+          const y =
+            section.getBoundingClientRect().top + window.scrollY + yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
         }
-      }, 100); // Delay untuk memastikan halaman sudah berpindah
+      }, 100);
     } else {
       const section = document.getElementById(id);
       if (section) {
-        section.scrollIntoView({ behavior: "smooth", block: "start" });
+        const yOffset = -NAVBAR_HEIGHT;
+        const y =
+          section.getBoundingClientRect().top + window.scrollY + yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
       }
     }
   };
@@ -49,7 +56,7 @@ function Navbar() {
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img src="/image/logo1.png" alt="logo" className="w-40" />
+          <img src="/image/siLoginTagline.png" alt="logo" className="w-40" />
         </Link>
 
         {/* Toggle Button for Mobile */}
@@ -134,17 +141,31 @@ function Navbar() {
             {/* Dropdown Items - Desktop */}
             {isDropdownOpen && (
               <div className="absolute bg-base-100 rounded-md py-2 mt-2 w-56 z-50">
-                <Link to="/panduan-pembeli" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+                <Link
+                  to="/panduan-pembeli"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                >
                   Panduan Pembeli
                 </Link>
-                <Link to="/panduan-penyedia" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+                <Link
+                  to="/panduan-penyedia"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                >
                   Panduan Penyedia
                 </Link>
-                <Link to="/faq-pembeli" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
-                  FAQ Pembeli { ""} <i className="fa fa-triangle-exclamation text-red-500"/>
+                <Link
+                  to="/faq-pembeli"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                >
+                  FAQ Pembeli {""}{" "}
+                  <i className="fa fa-triangle-exclamation text-red-500" />
                 </Link>
-                <Link to="/faq-penyedia" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
-                  FAQ Penyedia  { ""} <i className="fa fa-triangle-exclamation text-red-500"/>
+                <Link
+                  to="/faq-penyedia"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                >
+                  FAQ Penyedia {""}{" "}
+                  <i className="fa fa-triangle-exclamation text-red-500" />
                 </Link>
               </div>
             )}
@@ -177,17 +198,31 @@ function Navbar() {
 
             {isMobileDropdownOpen && (
               <div className="bg-base-100 rounded-md py-2 mb-4">
-                <Link to="/panduan-pembeli" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+                <Link
+                  to="/panduan-pembeli"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                >
                   Panduan Pembeli
                 </Link>
-                <Link to="/panduan-penyedia" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+                <Link
+                  to="/panduan-penyedia"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                >
                   Panduan Penyedia
                 </Link>
-                <Link to="/faq-pembeli" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
-                  FAQ Pembeli { ""} <i className="fa fa-triangle-exclamation text-red-500"/>
+                <Link
+                  to="/faq-pembeli"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                >
+                  FAQ Pembeli {""}{" "}
+                  <i className="fa fa-triangle-exclamation text-red-500" />
                 </Link>
-                <Link to="/faq-penyedia" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
-                  FAQ Penyedia { ""} <i className="fa fa-triangle-exclamation text-red-500"/>
+                <Link
+                  to="/faq-penyedia"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                >
+                  FAQ Penyedia {""}{" "}
+                  <i className="fa fa-triangle-exclamation text-red-500" />
                 </Link>
               </div>
             )}
@@ -195,16 +230,16 @@ function Navbar() {
 
           {/* Buttons */}
           <div className="flex flex-col lg:flex-row lg:space-x-4 mt-4 space-y-2 lg:space-y-0 lg:mt-0">
-            <Link to="https://dev.rynest-technology.com:4442/">
+            <a href="https://cso.silogin.id" target="_blank">
               <button className="btn btn-outline border-[#DEE1E6] text-[#000] hover:text-black hover:bg-[#DEE1E6] hover:border-[#DEE1E6]">
                 <i className="fa fa-headset" /> Customer Care / Klaim
               </button>
-            </Link>
-            <Link to="https://dev.rynest-technology.com:4443/">
+            </a>
+            <a href="https:apps.silogin.id" target="_blank">
               <button className="btn bg-[#DB1F26] text-white hover:bg-[#b51a20]">
                 Masuk / Daftar
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
