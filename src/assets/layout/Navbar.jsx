@@ -28,28 +28,20 @@ function Navbar() {
   }, [isOpen]);
 
   const handleScroll = (id, path) => {
-    const NAVBAR_HEIGHT = 60;
-    if (location.pathname !== path) {
-      navigate(path);
-      setTimeout(() => {
-        const section = document.getElementById(id);
-        if (section) {
-          const yOffset = -NAVBAR_HEIGHT;
-          const y =
-            section.getBoundingClientRect().top + window.scrollY + yOffset;
-          window.scrollTo({ top: y, behavior: "smooth" });
-        }
-      }, 100);
-    } else {
-      const section = document.getElementById(id);
-      if (section) {
-        const yOffset = -NAVBAR_HEIGHT;
-        const y =
-          section.getBoundingClientRect().top + window.scrollY + yOffset;
-        window.scrollTo({ top: y, behavior: "smooth" });
-      }
+  const NAVBAR_HEIGHT = 60;
+  if (location.pathname !== path) {
+    navigate(path, { state: { scrollToSection: id } });
+  } else {
+    const section = document.getElementById(id);
+    if (section) {
+      const yOffset = -NAVBAR_HEIGHT;
+      const y =
+        section.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
-  };
+  }
+};
+
 
   return (
     <nav className="bg-base-100 fixed top-0 left-0 w-full z-50 ">

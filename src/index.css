@@ -3,6 +3,10 @@
 @import "slick-carousel/slick/slick-theme.css";
 @import "css/intro.css";
 
+body {
+  overflow-x: hidden; 
+}
+
 .fade-enter {
   opacity: 0;
 }

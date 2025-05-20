@@ -1,15 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Intro from "../../components/Home/Intro";
 import About from "../../components/Home/About";
 import Services from "../../components/Home/Services";
 import Contact from "../../components/Home/Contact";
 import FAQ from "../../components/Home/FAQ";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Product from "../../components/Home/Product";
 import Policy from "../../components/Home/Policy";
 import Polis from "../../components/Home/Polis";
 
+const NAVBAR_HEIGHT = 60;
+
 function Home() {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollToSection) {
+      const id = location.state.scrollToSection;
+      const scrollToSection = () => {
+        const section = document.getElementById(id);
+        if (section) {
+          const yOffset = -NAVBAR_HEIGHT;
+          const y = section.getBoundingClientRect().top + window.scrollY + yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      };
+
+      // Tunggu sampai transition Framer Motion selesai (estimasi 300ms)
+      const timeout = setTimeout(scrollToSection, 350);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [location.state]);
+  
   return (
     <>
       {/* Intro Full Width */}

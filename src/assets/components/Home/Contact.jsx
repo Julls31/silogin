@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Contact() {
   return (
     <>
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4">
         <div className="bg-base-100 lg:p-8 pt-8 rounded-lg">
           {/* Header */}
           <div className="text-center mb-12">
