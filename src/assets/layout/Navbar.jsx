@@ -227,7 +227,7 @@ function Navbar() {
                 <i className="fa fa-headset" /> Customer Care / Klaim
               </button>
             </a>
-            <a href="https:apps.silogin.id" target="_blank">
+            <a href="https://apps.silogin.id" target="_blank">
               <button className="btn bg-[#DB1F26] text-white hover:bg-[#b51a20]">
                 Masuk / Daftar
               </button>

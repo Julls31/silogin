@@ -67,6 +67,10 @@ body {
   animation: fadeIn 2s ease-out;
 }
 
+.fade-in-pp {
+  animation: fadeIn 0.5s ease-out;
+}
+
 
 @tailwind base;
 @tailwind components;

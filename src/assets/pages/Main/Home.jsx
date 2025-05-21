@@ -3,7 +3,6 @@ import Intro from "../../components/Home/Intro";
 import About from "../../components/Home/About";
 import Services from "../../components/Home/Services";
 import Contact from "../../components/Home/Contact";
-import FAQ from "../../components/Home/FAQ";
 import { Link, useLocation } from "react-router-dom";
 import Product from "../../components/Home/Product";
 import Policy from "../../components/Home/Policy";
@@ -28,7 +27,7 @@ function Home() {
       };
 
       // Tunggu sampai transition Framer Motion selesai (estimasi 300ms)
-      const timeout = setTimeout(scrollToSection, 350);
+      const timeout = setTimeout(scrollToSection, 100);
 
       return () => clearTimeout(timeout);
     }

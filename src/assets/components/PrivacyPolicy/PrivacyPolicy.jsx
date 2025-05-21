@@ -1,51 +1,81 @@
 import React, { useState, useEffect } from "react";
+import Select from "react-select";
 
 function PrivacyPolicy() {
   const [currentTab, setCurrentTab] = useState(0);
+  const tabs = [
+    "0. Umum",
+    "1. Informasi Pribadi Yang Dapat Kami Kumpulkan",
+    "2. Penggunaan Informasi Pribadi",
+    "3. Pengungkapan Informasi Pribadi",
+    "4. Tautan Ke Situs Lain",
+    "5. Penyimpanan Informasi Pribadi",
+    "6. Hak Anda",
+    "7. Kebijakan Cache",
+    "8. Pengakuan Dan Persetujuan",
+    "9. Notifikasi (Pemberitahuan)",
+    "10. Perubahan Dalam Kebijakan Privasi Kami",
+    "11. Cara Menghubungi Kami",
+  ];
+
+   const selectOptions = tabs.map((tab, index) => ({
+    value: index,
+    label: tab,
+   }));
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [currentTab]);
   return (
     <>
-      <div className="max-w-screen-xl min-h-screen mx-auto py-10 2xl:py-12">
+      <div className="max-w-screen-xl min-h-screen mx-auto 2xl:py-12">
         <div className="container mx-auto">
-          <div className="flex">
-            <div className="w-1/4">
+          {/* Mobile Dropdown using React Select */}
+        <div className="block sm:hidden mb-6">
+          <Select
+            options={selectOptions}
+            value={selectOptions.find((opt) => opt.value === currentTab)}
+            onChange={(selected) => setCurrentTab(selected.value)}
+            className="text-sm"
+            styles={{
+              control: (base) => ({
+                ...base,
+                borderColor: "#d1d5db",
+                padding: "2px",
+              }),
+              option: (base, state) => ({
+                ...base,
+                backgroundColor: state.isFocused ? "#f87171" : "white",
+                color: state.isFocused ? "white" : "black",
+              }),
+            }}
+          />
+        </div>
+          <div className="flex flex-col sm:flex-row">
+            {/* Sidebar untuk Desktop */}
+            <div className="hidden sm:block sm:w-1/4">
               <div className="flex flex-col py-6">
-                {[
-                  "0. Umum",
-                  "1. Informasi Pribadi Yang Dapat Kami Kumpulkan",
-                  "2. Penggunaan Informasi Pribadi",
-                  "3. Pengungkapan Informasi Pribadi",
-                  "4. Tautan Ke Situs Lain",
-                  "5. Penyimpanan Informasi Pribadi",
-                  "6. Hak Anda",
-                  "7. Kebijakan Cache",
-                  "8. Pengakuan Dan Persetujuan",
-                  "9. Notifikasi (Pemberitahuan)",
-                  "10. Perubahan Dalam Kebijakan Privasi Kami",
-                  "11. Cara Menghubungi Kami",
-                ].map((tab, index) => (
+                {tabs.map((tab, index) => (
                   <button
                     key={index}
                     onClick={() => setCurrentTab(index)}
                     className={`text-left py-2 px-4 border-b ${
                       currentTab === index
-                        ? "border-red-600"
+                        ? "border-red-600 font-semibold"
                         : "border-transparent"
-                    }`}
+                    } hover:bg-gray-100 transition`}
                   >
                     {tab}
                   </button>
                 ))}
               </div>
             </div>
-            <div className="w-3/4">
+            <div className="w-full md:w-3/4">
               <div className="content p-4">
                 {currentTab === 0 && (
                   <div
                     className={`content fade-in-out ${
-                      currentTab === 0 ? "fade-in" : "fade-out"
+                      currentTab === 0 ? "fade-in-pp" : "fade-out"
                     }`}
                   >
                     <h1 className="text-xl font-semibold mb-4">
@@ -89,7 +119,7 @@ function PrivacyPolicy() {
                 {currentTab === 1 && (
                   <div
                     className={`content fade-in-out ${
-                      currentTab === 1 ? "fade-in" : "fade-out"
+                      currentTab === 1 ? "fade-in-pp" : "fade-out"
                     }`}
                   >
                     <h1 className="text-xl font-semibold mb-4">
@@ -110,11 +140,11 @@ function PrivacyPolicy() {
                         Informasi yang dapat Anda berikan meliputi: nama
                         perusahaan, nama penanggung jawab, Nomor Induk Berusaha
                         (NIB), alamat, alamat email, nomor telepon yang dapat
-                        dihubungi, serta data administratif
-                        lainnya yang diperlukan untuk keperluan validasi dan
-                        pemberian perlindungan asuransi. Kami dapat meminta Anda
-                        melakukan verifikasi untuk memastikan keakuratan
-                        informasi tersebut.
+                        dihubungi, serta data administratif lainnya yang
+                        diperlukan untuk keperluan validasi dan pemberian
+                        perlindungan asuransi. Kami dapat meminta Anda melakukan
+                        verifikasi untuk memastikan keakuratan informasi
+                        tersebut.
                       </li>
 
                       <li>
@@ -166,7 +196,7 @@ function PrivacyPolicy() {
                 {currentTab === 2 && (
                   <div
                     className={`content fade-in-out ${
-                      currentTab === 2 ? "fade-in" : "fade-out"
+                      currentTab === 2 ? "fade-in-pp" : "fade-out"
                     }`}
                   >
                     <h1 className="text-xl font-semibold mb-4">
@@ -273,7 +303,7 @@ function PrivacyPolicy() {
                 {currentTab === 3 && (
                   <div
                     className={`content fade-in-out ${
-                      currentTab === 3 ? "fade-in" : "fade-out"
+                      currentTab === 3 ? "fade-in-pp" : "fade-out"
                     }`}
                   >
                     <h1 className="text-xl font-semibold mb-4">
@@ -329,7 +359,7 @@ function PrivacyPolicy() {
                 {currentTab === 4 && (
                   <div
                     className={`content fade-in-out ${
-                      currentTab === 4 ? "fade-in" : "fade-out"
+                      currentTab === 4 ? "fade-in-pp" : "fade-out"
                     }`}
                   >
                     <h1 className="text-xl font-semibold mb-4">
@@ -356,7 +386,7 @@ function PrivacyPolicy() {
                 {currentTab === 5 && (
                   <div
                     className={`content fade-in-out ${
-                      currentTab === 5 ? "fade-in" : "fade-out"
+                      currentTab === 5 ? "fade-in-pp" : "fade-out"
                     }`}
                   >
                     <h1 className="text-xl font-semibold mb-4">
@@ -375,7 +405,7 @@ function PrivacyPolicy() {
                 {currentTab === 6 && (
                   <div
                     className={`content fade-in-out ${
-                      currentTab === 6 ? "fade-in" : "fade-out"
+                      currentTab === 6 ? "fade-in-pp" : "fade-out"
                     }`}
                   >
                     <h1 className="text-xl font-semibold mb-4">Hak Anda</h1>
@@ -394,7 +424,7 @@ function PrivacyPolicy() {
                 {currentTab === 7 && (
                   <div
                     className={`content fade-in-out ${
-                      currentTab === 7 ? "fade-in" : "fade-out"
+                      currentTab === 7 ? "fade-in-pp" : "fade-out"
                     }`}
                   >
                     <h1 className="text-xl font-semibold mb-4">
@@ -411,7 +441,7 @@ function PrivacyPolicy() {
                 {currentTab === 8 && (
                   <div
                     className={`content fade-in-out ${
-                      currentTab === 8 ? "fade-in" : "fade-out"
+                      currentTab === 8 ? "fade-in-pp" : "fade-out"
                     }`}
                   >
                     <h1 className="text-xl font-semibold mb-4">
@@ -429,7 +459,7 @@ function PrivacyPolicy() {
                 {currentTab === 9 && (
                   <div
                     className={`content fade-in-out ${
-                      currentTab === 9 ? "fade-in" : "fade-out"
+                      currentTab === 9 ? "fade-in-pp" : "fade-out"
                     }`}
                   >
                     <h1 className="text-xl font-semibold mb-4">
@@ -447,7 +477,7 @@ function PrivacyPolicy() {
                 {currentTab === 10 && (
                   <div
                     className={`content fade-in-out ${
-                      currentTab === 10 ? "fade-in" : "fade-out"
+                      currentTab === 10 ? "fade-in-pp" : "fade-out"
                     }`}
                   >
                     <h1 className="text-xl font-semibold mb-4">
@@ -465,7 +495,7 @@ function PrivacyPolicy() {
                 {currentTab === 11 && (
                   <div
                     className={`content fade-in-out ${
-                      currentTab === 11 ? "fade-in" : "fade-out"
+                      currentTab === 11 ? "fade-in-pp" : "fade-out"
                     }`}
                   >
                     <h1 className="text-xl font-semibold mb-4">
