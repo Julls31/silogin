@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 
 function GuideUser() {
   const pembeliVideos = [
-    { title: "Panduan Pembeli 1", videoId: "yAoLSRbwxL8" },
-    { title: "Panduan Pembeli 2", videoId: "yAoLSRbwxL8" },
-    { title: "Panduan Pembeli 3", videoId: "yAoLSRbwxL8" },
-    { title: "Panduan Pembeli 4", videoId: "yAoLSRbwxL8" },
+    { title: "Panduan L/K/PD 1", videoId: "yAoLSRbwxL8" },
+    { title: "Panduan L/K/PD 2", videoId: "yAoLSRbwxL8" },
+    { title: "Panduan L/K/PD 3", videoId: "yAoLSRbwxL8" },
+    { title: "Panduan L/K/PD 4", videoId: "yAoLSRbwxL8" },
   ];
 
   const [selectedVideo, setSelectedVideo] = useState(null);
@@ -25,7 +25,7 @@ function GuideUser() {
     <div className="p-4 mx-auto min-h-screen py-24">
       <div id="panduan-pembeli" className="mb-12">
         <h2 className="text-2xl font-semibold text-gray-700 mb-4">
-          Panduan Pembeli
+          Panduan L/K/PD
         </h2>
 
         {/* Display large video if a video is selected */}
@@ -37,7 +37,7 @@ function GuideUser() {
                   src={`https://www.youtube.com/embed/${selectedVideo}`}
                   frameBorder="0"
                   allowFullScreen
-                  title="Video Pembeli"
+                  title="Video L/K/PD"
                   className="absolute top-0 left-0 w-full h-full"
                 ></iframe>
               </div>

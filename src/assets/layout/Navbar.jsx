@@ -134,10 +134,10 @@ function Navbar() {
             {isDropdownOpen && (
               <div className="absolute bg-base-100 rounded-md py-2 mt-2 w-56 z-50">
                 <Link
-                  to="/panduan-pembeli"
+                  to="/panduan-lkpd"
                   className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 >
-                  Panduan Pembeli
+                  Panduan L/K/PD
                 </Link>
                 <Link
                   to="/panduan-penyedia"
@@ -146,18 +146,17 @@ function Navbar() {
                   Panduan Penyedia
                 </Link>
                 <Link
-                  to="/faq-pembeli"
+                  to="/faq-lkpd"
                   className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 >
-                  FAQ Pembeli {""}{" "}
+                  FAQ L/K/PD {""}{" "}
                   <i className="fa fa-triangle-exclamation text-red-500" />
                 </Link>
                 <Link
                   to="/faq-penyedia"
                   className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 >
-                  FAQ Penyedia {""}{" "}
-                  <i className="fa fa-triangle-exclamation text-red-500" />
+                  FAQ Penyedia 
                 </Link>
               </div>
             )}
@@ -191,10 +190,10 @@ function Navbar() {
             {isMobileDropdownOpen && (
               <div className="bg-base-100 rounded-md py-2 mb-4">
                 <Link
-                  to="/panduan-pembeli"
+                  to="/panduan-lkpd"
                   className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 >
-                  Panduan Pembeli
+                  Panduan L/K/PD
                 </Link>
                 <Link
                   to="/panduan-penyedia"
@@ -203,18 +202,17 @@ function Navbar() {
                   Panduan Penyedia
                 </Link>
                 <Link
-                  to="/faq-pembeli"
+                  to="/faq-lkpd"
                   className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 >
-                  FAQ Pembeli {""}{" "}
+                  FAQ L/K/PD {""}{" "}
                   <i className="fa fa-triangle-exclamation text-red-500" />
                 </Link>
                 <Link
                   to="/faq-penyedia"
                   className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 >
-                  FAQ Penyedia {""}{" "}
-                  <i className="fa fa-triangle-exclamation text-red-500" />
+                  FAQ Penyedia
                 </Link>
               </div>
             )}

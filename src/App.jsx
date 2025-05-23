@@ -31,9 +31,9 @@ function App() {
               <Route path="/kebijakan-privasi" element={<AnimatedPage><Privacy /></AnimatedPage>} />
               <Route path="/syarat-ketentuan" element={<AnimatedPage><TermAndCondition /></AnimatedPage>} />
               <Route path="/kalkulatorpremi" element={<AnimatedPage><Calculator /></AnimatedPage>} />
-              <Route path="/panduan-pembeli" element={<AnimatedPage><GuideUser /></AnimatedPage>} />
+              <Route path="/panduan-lkpd" element={<AnimatedPage><GuideUser /></AnimatedPage>} />
               <Route path="/panduan-penyedia" element={<AnimatedPage><GuideVendor /></AnimatedPage>} />
-              <Route path="/faq-pembeli" element={<AnimatedPage><FAQUser /></AnimatedPage>} />
+              <Route path="/faq-lkpd" element={<AnimatedPage><FAQUser /></AnimatedPage>} />
               <Route path="/faq-penyedia" element={<AnimatedPage><FAQVendor /></AnimatedPage>} />
               <Route path="*" element={<AnimatedPage><NotFound /></AnimatedPage>} />
             </Route>

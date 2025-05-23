@@ -62,10 +62,8 @@ function Footer() {
             <h6 className="font-semibold text-red-500 mb-2">PANDUAN</h6>
             <ul className="space-y-1 text-sm">
               <li>
-                <Link to="/panduan-pembeli">
-                  <button className="hover:text-red-500">
-                    Panduan Pembeli
-                  </button>
+                <Link to="/panduan-lkpd">
+                  <button className="hover:text-red-500">Panduan L/K/PD</button>
                 </Link>
               </li>
               <li>
@@ -76,10 +74,15 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <button className="hover:text-red-500">FAQ Pembeli</button>
+                <Link to="/faq-lkpd">
+                  <button className="hover:text-red-500">FAQ L/K/PD</button>
+                </Link>
+                
               </li>
               <li>
-                <button className="hover:text-red-500">FAQ Penyedia</button>
+                <Link to="/faq-penyedia">
+                  <button className="hover:text-red-500">FAQ Penyedia</button>
+                </Link>
               </li>
             </ul>
           </div>
@@ -98,7 +101,7 @@ function Footer() {
               </li>
               <li className="flex justify-center lg:justify-start items-center gap-2 hover:text-red-500">
                 <i className="fas fa-envelope text-gray-700"></i>
-                info@silogin.id
+                customercare@cso.silogin.id
               </li>
             </ul>
           </div>
