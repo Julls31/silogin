@@ -180,7 +180,7 @@ function PrivacyPolicy() {
                       <li>
                         <strong>Informasi dari sumber lain.</strong> Kami juga
                         dapat menerima informasi dari pihak ketiga yang bekerja
-                        sama dengan Kami, seperti lembaga Pemerintah (K/L/PD),
+                        sama dengan Kami, seperti lembaga Pemerintah (L/K/PD),
                         penyedia sistem e-catalogue, pihak asuransi mitra,
                         penyedia layanan verifikasi, maupun penyedia pembayaran.
                         Informasi ini digunakan untuk mempercepat proses

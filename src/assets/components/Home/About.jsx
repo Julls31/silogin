@@ -38,7 +38,7 @@ function About() {
         > */}
         <div className="flex flex-col md:flex-row items-center lg:items-start bg-base-100 py-4">
           {/* Image */}
-          <div className="flex-shrink-0 p-4 lg:pl-0 md:mr-16 md:ml-10 lg:ml-16">
+          <div className="flex-shrink-0 p-4 lg:pl-0 md:mr-16 md:ml-10 lg:ml-36">
             <img
               src="/image/laptop.png"
               alt="SiLogin Tagline"

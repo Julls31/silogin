@@ -22,13 +22,13 @@ function GuideUser() {
   };
 
   return (
-    <div className="p-4 mx-auto min-h-screen py-24">
+    <div className="p-4 mx-4 min-h-screen py-24">
       <div id="panduan-pembeli" className="mb-12">
         <h2 className="text-2xl font-semibold text-gray-700 mb-4">
           Panduan L/K/PD
         </h2>
 
-        {/* Display large video if a video is selected */}
+        {/* Display large video */}
         {selectedVideo && (
           <div className="mb-8 flex justify-center">
             <div className="w-full sm:w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2">
