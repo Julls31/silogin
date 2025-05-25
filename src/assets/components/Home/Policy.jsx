@@ -10,7 +10,7 @@ function Policy() {
             Kebijakan Produk Asuransi
           </h1>
         </div>
-        <p className="text-lg leading-relaxed text-center px-4 md:px-0 py-4 lg:py-0">
+        <p className="text-lg text-justify md:text-center px-4 md:px-0 py-4 lg:py-0">
           Kode seleksi KBKI 2015 Barang yang dapat dijamin dalam program
           Asuransi <span className="font-semibold text-red-600">SiLogin</span> saat ini meliputi:
         </p>

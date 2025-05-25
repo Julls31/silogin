@@ -23,7 +23,7 @@ function About() {
             </h1>
           </div>
         </div>
-        <p className="text-gray-700 text-lg leading-relaxed text-center px-4 md:px-0 py-4 lg:py-0">
+        <p className="text-gray-700 text-lg text-justify md:text-center px-4 md:px-0 py-4 lg:py-0">
           Program Asuransi yang memberikan perlindungan asuransi dengan cepat
           dan mudah bagi Penyedia / Vendor dalam bertransaksi atas pembelian
           barang oleh Pemerintah (Lembaga / Kementerian / Pemerintah Daerah -
@@ -48,8 +48,8 @@ function About() {
 
           {/* Description */}
           <div className="text-gray-700 text-lg leading-relaxed flex-grow px-4 md:px-0 py-4 lg:pt-8">
-            <h3 className="text-xl font-semibold mb-4 text-gray-800">
-              Tujuan Asuransi <span className="text-red-600">SiLogin</span>:
+            <h3 className="text-xl font-semibold text-center mb-4 text-gray-800">
+              Tujuan Asuransi <span className="text-red-600">SiLogin</span>
             </h3>
             <ul className="text-gray-600">
               <li className="flex items-start gap-3">

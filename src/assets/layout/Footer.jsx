@@ -142,10 +142,10 @@ function Footer() {
         </h6>
         <div className="flex flex-wrap justify-center gap-6 items-center mb-8">
           <a href="https://grm-risk.com/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-            <img src="/image/grm.png" alt="GRM" className="h-14 md:h-20 object-contain" />
+            <img src="/image/grm.png" alt="GRM" className="h-20 object-contain" />
           </a>
           <a href="https://www.kokonutbrokers.com/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-            <img src="/image/kokonut.png" alt="Kokonut" className="h-14 md:h-20 object-contain" />
+            <img src="/image/kokonut.png" alt="Kokonut" className="h-20  object-contain" />
           </a>
         </div>
 

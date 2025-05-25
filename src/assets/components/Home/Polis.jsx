@@ -16,13 +16,13 @@ function Polis() {
           </div>
 
           {/* Description */}
-          <p className="text-lg text-center px-4 md:px-0 py-0">
-            Dokumen tertulis yang menjelaskan secara rinci syarat, ketentuan,
-            jaminan (pertanggungan), pengecualian, dan prosedur klaim dari suatu
-            produk asuransi. Ini adalah bagian utama dari polis asuransi yang
-            menjadi dasar hubungan hukum antara pihak tertanggung (nasabah) dan
-            penanggung (perusahaan asuransi).
-          </p>
+          <p className="text-lg text-justify md:text-center px-4 md:px-0 py-0">
+  Dokumen tertulis yang menjelaskan secara rinci syarat, ketentuan,
+  jaminan (pertanggungan), pengecualian, dan prosedur klaim dari suatu
+  produk asuransi. Ini adalah bagian utama dari polis asuransi yang
+  menjadi dasar hubungan hukum antara pihak tertanggung (nasabah) dan
+  penanggung (perusahaan asuransi).
+</p>
 
           {/* Form Input */}
           <div className="mt-12 px-4 md:px-0">

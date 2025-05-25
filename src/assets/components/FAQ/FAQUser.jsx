@@ -281,136 +281,134 @@ function FAQUser() {
     {
       title: "Pengajuan Klaim Asuransi",
       questions: [
-        {
-          title: "Bagaimana cara mengajukan klaim asuransi SiLogin?",
-          question:
-            "Anda dapat mengajukan klaim melalui website silogin.id, pilih menu Customer Care/Klaim, dan isi formulir dengan nomor polis Anda.",
-        },
-        {
-          title: "Dokumen apa saja yang dibutuhkan saat mengajukan klaim?",
-          question:
-            "Dokumen yang dibutuhkan antara lain nomor polis asuransi, form laporan kronologi klaim yang lengkap, bukti foto kerusakan barang (minimal 3, maksimal 5), serta Invoice dan Quotation (jika ada).",
-        },
-        {
-          title:
-            "Informasi apa saja yang perlu saya isi dalam form laporan kronologi klaim?",
-          question:
-            "Anda perlu mengisi email pelapor, nama pelapor, nomor handphone, NIK atau NIP, data barang, kronologi kejadian, estimasi nominal klaim, tanggal kejadian, deskripsi laporan kejadian, dan mengunggah bukti foto.",
-        },
-        {
-          title:
-            "Bagaimana jika saya tidak memiliki semua dokumen yang diminta saat pengajuan awal?",
-          question:
-            "Anda tetap dapat menyimpan formulir klaim yang belum lengkap dan melanjutkannya di lain waktu melalui link yang dikirimkan ke email Anda.",
-        },
-        {
-          title:
-            "Berapa ukuran maksimal untuk foto bukti kerusakan yang dapat diunggah?",
-          question: "Ukuran maksimal per foto yang dapat diunggah adalah 2MB.",
-        },
-        {
-          title: "Apa yang terjadi setelah saya Submit form pengajuan klaim?",
-          question:
-            "Anda akan menerima notifikasi email mengenai status pengajuan klaim yang telah Anda kirimkan.",
-        },
-        {
-          title: "Bagaimana cara mengetahui status pengajuan klaim saya?",
-          question:
-            "Anda dapat melacak status klaim melalui link yang dikirimkan ke email Anda atau melalui website SiLogin.",
-        },
-        {
-          title:
-            "Berapa lama proses verifikasi dan persetujuan klaim asuransi?",
-          question:
-            "Proses verifikasi dan persetujuan klaim akan dilakukan oleh pihak asuransi setelah laporan Anda diverifikasi oleh sistem SiLogin. Jangka waktunya dapat bervariasi tergantung kompleksitas klaim dan ketentuan perusahaan asuransi.",
-        },
-        {
-          title: "Apa itu Klaim Garansi dalam sistem SiLogin?",
-          question:
-            "Klaim Garansi adalah kategori klaim yang akan ditentukan oleh Customer Care berdasarkan laporan yang Anda ajukan sesuai dengan ketentuan yang berlaku.",
-        },
-        {
-          title:
-            "Apakah saya akan menerima pemberitahuan email mengenai perkembangan status klaim saya?",
-          question:
-            "Ya, Anda akan selalu menerima notifikasi email terkait proses persetujuan atau perbaikan klaim yang sedang Anda ajukan.",
-        },
-        {
-          title:
-            "Apa yang harus saya lakukan jika ada permintaan perbaikan atau penambahan dokumen klaim?",
-          question:
-            "Ikuti instruksi yang diberikan melalui email untuk melakukan perbaikan atau menambahkan dokumen yang diperlukan.",
-        },
-        {
-          title: "Bagaimana jika klaim saya ditolak?",
-          question:
-            "Anda akan menerima notifikasi email mengenai penolakan klaim beserta alasannya. Anda dapat mempelajari lebih lanjut mengenai ketentuan penolakan dalam polis asuransi atau menghubungi tim dukungan SiLogin untuk klarifikasi.",
-        },
-        {
-          title: "Apakah saya bisa mengajukan banding jika klaim saya ditolak?",
-          question:
-            "Informasi mengenai proses banding jika klaim ditolak akan tercantum dalam polis asuransi atau dapat Anda tanyakan kepada tim dukungan SiLogin.",
-        },
-        {
-          title:
-            "Siapa yang akan melakukan peninjauan dan menyetujui klaim saya?",
-          question:
-            "Peninjauan dan persetujuan klaim akan dilakukan oleh pihak perusahaan asuransi yang bekerja sama dengan SiLogin.",
-        },
-        {
-          title: "Apa itu Surat Konfirmasi Ganti Rugi (SKGR)?",
-          question:
-            "SKGR adalah notifikasi email yang Anda terima jika pengajuan klaim Anda telah ditinjau dan disetujui oleh pihak asuransi.",
-        },
-        {
-          title:
-            "Apa yang harus saya lakukan setelah menerima notifikasi SKGR?",
-          question:
-            "Anda akan diarahkan untuk menuju link Form persetujuan SKGR yang terlampir dalam email.",
-        },
-        {
-          title: "Bisakah saya menolak SKGR yang telah diterbitkan?",
-          question:
-            "Ya, Anda memiliki opsi untuk menyetujui atau menolak SKGR berdasarkan hasil analisa dan peninjauan pihak asuransi.",
-        },
-        {
-          title: "Apa yang terjadi jika saya menolak SKGR?",
-          question:
-            "Jika Anda menolak SKGR, Anda perlu memberikan alasan penolakan dan melakukan banding lebih lanjut dengan pihak asuransi.",
-        },
-        {
-          title: "Bagaimana cara menyetujui SKGR?",
-          question:
-            "Anda dapat menyetujui SKGR dengan menekan tombol setuju pada form yang tersedia dan mengisi data bank penerima klaim.",
-        },
-        {
-          title:
-            "Informasi bank apa saja yang perlu saya isi pada form persetujuan SKGR?",
-          question:
-            "Anda perlu mengisi Nama Bank, Cabang Bank, Nomor Rekening, dan Nama Penerima.",
-        },
-        {
-          title: "Apa yang terjadi setelah sayaSubmit form persetujuan SKGR?",
-          question:
-            "Anda akan menerima notifikasi email bahwa pengajuan klaim Anda telah selesai dibayarkan berdasarkan data bank yang telah Anda input.",
-        },
-        {
-          title:
-            "Berapa lama waktu yang dibutuhkan hingga pembayaran klaim masuk ke rekening saya setelah SKGR disetujui?",
-          question:
-            "Waktu pembayaran dapat bervariasi tergantung pada kebijakan perusahaan asuransi dan proses transfer bank. Informasi perkiraan waktu pembayaran biasanya akan tercantum dalam notifikasi email.",
-        },
-        {
-          title:
-            "Apa yang harus saya lakukan jika pembayaran klaim tidak kunjung masuk ke rekening saya?",
-          question:
-            "Periksa kembali data bank yang telah Anda input. Jika sudah benar, segera hubungi tim dukungan SiLogin dengan menyertakan bukti persetujuan SKGR.",
-        },
-        {
-          title: "Apakah saya akan menerima rincian pembayaran klaim?",
-          question:
-            "Rincian pembayaran klaim mungkin akan disertakan dalam notifikasi email atau dapat Anda tanyakan kepada tim dukungan SiLogin.",
-        },
+        
+          {
+            question: "Bagaimana cara mengajukan klaim asuransi SiLogin?",
+            answer:
+              "Anda dapat mengajukan klaim melalui website silogin.id, pilih menu Customer Care/Klaim, dan isi formulir dengan nomor polis Anda.",
+          },
+          {
+            question: "Dokumen apa saja yang dibutuhkan saat mengajukan klaim?",
+            answer:
+              "Dokumen yang dibutuhkan antara lain nomor polis asuransi, form laporan kronologi klaim yang lengkap, bukti foto kerusakan barang (minimal 3, maksimal 5), serta Invoice dan Quotation (jika ada).",
+          },
+          {
+            question:
+              "Informasi apa saja yang perlu saya isi dalam form laporan kronologi klaim?",
+            answer:
+              "Anda perlu mengisi email pelapor, nama pelapor, nomor handphone, NIK atau NIP, data barang, kronologi kejadian, estimasi nominal klaim, tanggal kejadian, deskripsi laporan kejadian, dan mengunggah bukti foto.",
+          },
+          {
+            question:
+              "Bagaimana jika saya tidak memiliki semua dokumen yang diminta saat pengajuan awal?",
+            answer:
+              "Anda tetap dapat menyimpan formulir klaim yang belum lengkap dan melanjutkannya di lain waktu melalui link yang dikirimkan ke email Anda.",
+          },
+          {
+            question: "Berapa ukuran maksimal untuk foto bukti kerusakan yang dapat diunggah?",
+            answer: "Ukuran maksimal per foto yang dapat diunggah adalah 2MB.",
+          },
+          {
+            question: "Apa yang terjadi setelah saya Submit form pengajuan klaim?",
+            answer:
+              "Anda akan menerima notifikasi email mengenai status pengajuan klaim yang telah Anda kirimkan.",
+          },
+          {
+            question: "Bagaimana cara mengetahui status pengajuan klaim saya?",
+            answer:
+              "Anda dapat melacak status klaim melalui link yang dikirimkan ke email Anda atau melalui website SiLogin.",
+          },
+          {
+            question: "Berapa lama proses verifikasi dan persetujuan klaim asuransi?",
+            answer:
+              "Proses verifikasi dan persetujuan klaim akan dilakukan oleh pihak asuransi setelah laporan Anda diverifikasi oleh sistem SiLogin. Jangka waktunya dapat bervariasi tergantung kompleksitas klaim dan ketentuan perusahaan asuransi.",
+          },
+          {
+            question: "Apa itu Klaim Garansi dalam sistem SiLogin?",
+            answer:
+              "Klaim Garansi adalah kategori klaim yang akan ditentukan oleh Customer Care berdasarkan laporan yang Anda ajukan sesuai dengan ketentuan yang berlaku.",
+          },
+          {
+            question:
+              "Apakah saya akan menerima pemberitahuan email mengenai perkembangan status klaim saya?",
+            answer:
+              "Ya, Anda akan selalu menerima notifikasi email terkait proses persetujuan atau perbaikan klaim yang sedang Anda ajukan.",
+          },
+          {
+            question:
+              "Apa yang harus saya lakukan jika ada permintaan perbaikan atau penambahan dokumen klaim?",
+            answer:
+              "Ikuti instruksi yang diberikan melalui email untuk melakukan perbaikan atau menambahkan dokumen yang diperlukan.",
+          },
+          {
+            question: "Bagaimana jika klaim saya ditolak?",
+            answer:
+              "Anda akan menerima notifikasi email mengenai penolakan klaim beserta alasannya. Anda dapat mempelajari lebih lanjut mengenai ketentuan penolakan dalam polis asuransi atau menghubungi tim dukungan SiLogin untuk klarifikasi.",
+          },
+          {
+            question: "Apakah saya bisa mengajukan banding jika klaim saya ditolak?",
+            answer:
+              "Informasi mengenai proses banding jika klaim ditolak akan tercantum dalam polis asuransi atau dapat Anda tanyakan kepada tim dukungan SiLogin.",
+          },
+          {
+            question: "Siapa yang akan melakukan peninjauan dan menyetujui klaim saya?",
+            answer:
+              "Peninjauan dan persetujuan klaim akan dilakukan oleh pihak perusahaan asuransi yang bekerja sama dengan SiLogin.",
+          },
+          {
+            question: "Apa itu Surat Konfirmasi Ganti Rugi (SKGR)?",
+            answer:
+              "SKGR adalah notifikasi email yang Anda terima jika pengajuan klaim Anda telah ditinjau dan disetujui oleh pihak asuransi.",
+          },
+          {
+            question: "Apa yang harus saya lakukan setelah menerima notifikasi SKGR?",
+            answer:
+              "Anda akan diarahkan untuk menuju link Form persetujuan SKGR yang terlampir dalam email.",
+          },
+          {
+            question: "Bisakah saya menolak SKGR yang telah diterbitkan?",
+            answer:
+              "Ya, Anda memiliki opsi untuk menyetujui atau menolak SKGR berdasarkan hasil analisa dan peninjauan pihak asuransi.",
+          },
+          {
+            question: "Apa yang terjadi jika saya menolak SKGR?",
+            answer:
+              "Jika Anda menolak SKGR, Anda perlu memberikan alasan penolakan dan melakukan banding lebih lanjut dengan pihak asuransi.",
+          },
+          {
+            question: "Bagaimana cara menyetujui SKGR?",
+            answer:
+              "Anda dapat menyetujui SKGR dengan menekan tombol setuju pada form yang tersedia dan mengisi data bank penerima klaim.",
+          },
+          {
+            question:
+              "Informasi bank apa saja yang perlu saya isi pada form persetujuan SKGR?",
+            answer:
+              "Anda perlu mengisi Nama Bank, Cabang Bank, Nomor Rekening, dan Nama Penerima.",
+          },
+          {
+            question: "Apa yang terjadi setelah sayaSubmit form persetujuan SKGR?",
+            answer:
+              "Anda akan menerima notifikasi email bahwa pengajuan klaim Anda telah selesai dibayarkan berdasarkan data bank yang telah Anda input.",
+          },
+          {
+            question:
+              "Berapa lama waktu yang dibutuhkan hingga pembayaran klaim masuk ke rekening saya setelah SKGR disetujui?",
+            answer:
+              "Waktu pembayaran dapat bervariasi tergantung pada kebijakan perusahaan asuransi dan proses transfer bank. Informasi perkiraan waktu pembayaran biasanya akan tercantum dalam notifikasi email.",
+          },
+          {
+            question:
+              "Apa yang harus saya lakukan jika pembayaran klaim tidak kunjung masuk ke rekening saya?",
+            answer:
+              "Periksa kembali data bank yang telah Anda input. Jika sudah benar, segera hubungi tim dukungan SiLogin dengan menyertakan bukti persetujuan SKGR.",
+          },
+          {
+            question: "Apakah saya akan menerima rincian pembayaran klaim?",
+            answer:
+              "Rincian pembayaran klaim mungkin akan disertakan dalam notifikasi email atau dapat Anda tanyakan kepada tim dukungan SiLogin.",
+          }
+        
       ],
     },
   ];

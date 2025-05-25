@@ -130,7 +130,7 @@ function Navbar() {
           <div className="block lg:hidden">
             <button
               onClick={() => setIsMobileDropdownOpen(!isMobileDropdownOpen)}
-              className="flex items-center text-gray-800 hover:text-black py-2 w-full"
+              className="flex items-center text-gray-800 hover:text-black py-2 w-full font-semibold"
             >
               Panduan
               <svg className={`ml-2 w-4 h-4 transform transition-transform ${isMobileDropdownOpen ? "rotate-180" : "rotate-0"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">

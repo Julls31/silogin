@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 
 function GuideUser() {
   const pembeliVideos = [
-    { title: "Panduan L/K/PD 1", videoId: "yAoLSRbwxL8" },
-    { title: "Panduan L/K/PD 2", videoId: "yAoLSRbwxL8" },
-    { title: "Panduan L/K/PD 3", videoId: "yAoLSRbwxL8" },
-    { title: "Panduan L/K/PD 4", videoId: "yAoLSRbwxL8" },
+    // { title: "Panduan L/K/PD 1", videoId: "yAoLSRbwxL8" },
+    // { title: "Panduan L/K/PD 2", videoId: "yAoLSRbwxL8" },
+    // { title: "Panduan L/K/PD 3", videoId: "yAoLSRbwxL8" },
+    // { title: "Panduan L/K/PD 4", videoId: "yAoLSRbwxL8" },
   ];
 
   const [selectedVideo, setSelectedVideo] = useState(null);
