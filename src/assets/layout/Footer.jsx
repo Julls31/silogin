@@ -120,16 +120,16 @@ function Footer() {
           <div className="lg:ml-8">
             <h6 className="font-semibold text-red-500 mb-2">IKUTI KAMI</h6>
             <div className="flex justify-center md:justify-start space-x-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
+              <a href="http://facebook.com/sl.asuransi/" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
                 <i className="fab fa-facebook text-2xl"></i>
               </a>
-              <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
+              <a href="https://x.com/siloginofficial" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
                 <i className="fab fa-x-twitter text-2xl"></i>
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
+              <a href="https://www.instagram.com/silogin/" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
                 <i className="fab fa-instagram text-2xl"></i>
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
+              <a href="https://www.youtube.com/@Sistem_SiLogin" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
                 <i className="fab fa-youtube text-2xl"></i>
               </a>
             </div>

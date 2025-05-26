@@ -32,13 +32,13 @@ function Contact() {
                 icon: "fa-regular fa-envelope",
                 title: "Email",
                 content:
-                  "Kirim pertanyaan atau keluhan Anda ke [info@silogin.id]. Tim kami akan merespons maksimal 1x24 jam.",
+                  "Kirim pertanyaan atau keluhan Anda ke [customercare@cso.silogin.id]. Tim kami akan merespons maksimal 1x24 jam.",
               },
               {
                 icon: "fa fa-chart-simple",
                 title: "Media Sosial",
                 content:
-                  "DM kami di [Instagram, Facebook, atau Twitter: @silogin.id].",
+                  "DM kami di [Instagram, Facebook, atau Twitter].",
               },
               {
                 icon: "fa-brands fa-whatsapp",
