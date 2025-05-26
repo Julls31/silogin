@@ -48,10 +48,10 @@ function Footer() {
             <h6 className="font-semibold text-red-500">BEKERJASAMA DENGAN</h6>
             <div className="flex flex-wrap justify-center md:justify-start">
               <a href="https://lkpp.go.id" target="_blank" rel="noopener noreferrer">
-                <img src="/image/lkpp.png" alt="LKPP" className="h-14 object-contain lg:-ml-2" />
+                <img src="/image/lkpp.png" alt="LKPP" className="h-16 md:h-14 object-contain lg:-ml-2" />
               </a>
               <a href="https://katalog.inaproc.id/" target="_blank" rel="noopener noreferrer">
-                <img src="/image/inaproc.png" alt="INAPROC" className="h-8 object-contain mt-3 lg:mt-0" />
+                <img src="/image/inaproc.png" alt="INAPROC" className="h-10 md:h-8 object-contain mt-3 lg:mt-0" />
               </a>
             </div>
           </div>
