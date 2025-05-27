@@ -48,7 +48,7 @@ function About() {
 
           {/* Description */}
           <div className="text-gray-700 text-lg leading-relaxed flex-grow px-4 md:px-0 py-4 lg:pt-8">
-            <h3 className="text-xl font-semibold text-center mb-4 text-gray-800">
+            <h3 className="text-xl font-semibold text-center md:text-left mb-4 text-gray-800">
               Tujuan Asuransi <span className="text-red-600">SiLogin</span>
             </h3>
             <ul className="text-gray-600">

@@ -25,13 +25,11 @@ function Footer() {
   };
 
   return (
-    <footer className="text-base-content py-10 relative">
+    <footer className="text-base-content py-10 relative text-base md:text-xs lg:text-base">
       {/* Toast notification */}
       {toastMessage && (
         <div className="toast toast-center">
-          <div className="alert bg-red-500 text-white">
-            {toastMessage}
-            </div>
+          <div className="alert bg-red-500 text-white">{toastMessage}</div>
         </div>
       )}
 
@@ -45,21 +43,21 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4 text-center md:text-left px-8">
           {/* BEKERJASAMA */}
           <div>
-            <h6 className="font-semibold text-red-500">BEKERJASAMA DENGAN</h6>
+            <h6 className="font-semibold text-red-500 text-base md:text-xs lg:text-base">BEKERJASAMA DENGAN</h6>
             <div className="flex flex-wrap justify-center md:justify-start">
               <a href="https://lkpp.go.id" target="_blank" rel="noopener noreferrer">
-                <img src="/image/lkpp.png" alt="LKPP" className="h-16 md:h-14 object-contain lg:-ml-2" />
+                <img src="/image/lkpp.png" alt="LKPP" className="h-16 lg:h-14 md:h-12 object-contain md:-ml-2" />
               </a>
               <a href="https://katalog.inaproc.id/" target="_blank" rel="noopener noreferrer">
-                <img src="/image/inaproc.png" alt="INAPROC" className="h-10 md:h-8 object-contain mt-3 lg:mt-0" />
+                <img src="/image/inaproc.png" alt="INAPROC" className="h-10 lg:h-8 md:h-6 object-contain mt-3 md:mt-0" />
               </a>
             </div>
           </div>
 
           {/* PANDUAN */}
           <div className="lg:ml-8">
-            <h6 className="font-semibold text-red-500 mb-2">PANDUAN</h6>
-            <ul className="space-y-1 text-sm">
+            <h6 className="font-semibold text-red-500 mb-2 text-base md:text-xs lg:text-base">PANDUAN</h6>
+            <ul className="space-y-1 text-base md:text-xs lg:text-base">
               <li>
                 <button onClick={() => handleScrollToTop("/panduan-lkpd", "Panduan L/K/PD")} className="hover:text-red-500">
                   Panduan L/K/PD
@@ -85,8 +83,8 @@ function Footer() {
 
           {/* CUSTOMER CARE */}
           <div className="lg:ml-8 text-center lg:text-left">
-            <h6 className="font-semibold text-red-500 mb-2">CUSTOMER CARE</h6>
-            <ul className="space-y-2 text-sm text-gray-700">
+            <h6 className="font-semibold text-red-500 mb-2 text-base md:text-xs lg:text-base">CUSTOMER CARE</h6>
+            <ul className="space-y-2 text-base md:text-xs lg:text-base text-gray-700">
               <li className="flex justify-center lg:justify-start items-center gap-2 hover:text-red-500">
                 <i className="fas fa-phone-alt text-gray-700"></i> 0821 2176 3671
               </li>
@@ -101,8 +99,8 @@ function Footer() {
 
           {/* KETENTUAN HUKUM */}
           <div className="lg:ml-8">
-            <h6 className="font-semibold text-red-500 mb-2">KETENTUAN HUKUM</h6>
-            <ul className="space-y-1 text-sm">
+            <h6 className="font-semibold text-red-500 mb-2 text-base md:text-xs lg:text-base">KETENTUAN HUKUM</h6>
+            <ul className="space-y-1 text-base md:text-xs lg:text-base">
               <li>
                 <button onClick={() => handleScrollToTop("/syarat-ketentuan", "Syarat & Ketentuan")} className="hover:text-red-500">
                   Syarat & Ketentuan
@@ -118,7 +116,7 @@ function Footer() {
 
           {/* SOCIAL MEDIA */}
           <div className="lg:ml-8">
-            <h6 className="font-semibold text-red-500 mb-2">IKUTI KAMI</h6>
+            <h6 className="font-semibold text-red-500 mb-2 text-base md:text-xs lg:text-base">IKUTI KAMI</h6>
             <div className="flex justify-center md:justify-start space-x-4">
               <a href="http://facebook.com/sl.asuransi/" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
                 <i className="fab fa-facebook text-2xl"></i>
@@ -137,7 +135,7 @@ function Footer() {
         </div>
 
         {/* Konsorsium */}
-        <h6 className="flex justify-center font-semibold text-red-500 mb-2 mt-8 uppercase text-center">
+        <h6 className="flex justify-center font-semibold text-red-500 mb-2 mt-8 uppercase text-center text-base md:text-xs lg:text-base">
           Konsorsium Pialang Asuransi Program Asuransi Silogin
         </h6>
         <div className="flex flex-wrap justify-center gap-6 items-center mb-8">
@@ -145,13 +143,13 @@ function Footer() {
             <img src="/image/grm.png" alt="GRM" className="h-20 object-contain" />
           </a>
           <a href="https://www.kokonutbrokers.com/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-            <img src="/image/kokonut.png" alt="Kokonut" className="h-20  object-contain" />
+            <img src="/image/kokonut.png" alt="Kokonut" className="h-20 object-contain" />
           </a>
         </div>
 
         {/* Footer Bottom */}
         <div className="mt-8 border-t border-gray-300 pt-4 text-center">
-          <p className="text-sm text-gray-500">
+          <p className="text-base md:text-xs lg:text-base text-gray-500">
             © {new Date().getFullYear()} <span className="text-red-500">siLogin</span>. All rights reserved.
           </p>
         </div>

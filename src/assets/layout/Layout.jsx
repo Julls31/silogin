@@ -8,7 +8,7 @@ const Layout = () => {
   return (
     <>
       {/* Navbar (Static, No Animation) */}
-      <div className="max-w-screen-xl mx-auto px-4">
+      <div className="max-w-screen-xl">
         <Navbar />
       </div>
 

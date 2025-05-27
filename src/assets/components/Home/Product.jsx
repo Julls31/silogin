@@ -55,7 +55,7 @@ function Product() {
             <img
               src="/image/garansi.png"
               alt="Asuransi Barang"
-              className="w-auto h-44 -mr-6 hidden lg:block"
+              className="w-auto h-44 -mr-2 hidden lg:block"
             />
           </div>
         </div>
@@ -75,12 +75,12 @@ function Product() {
           <img
             src="/image/tripa.png"
             alt="tripa"
-            className="h-24 md:h-48 object-contain"
+            className="h-24 md:h-36 object-contain"
           />
           <img
             src="/image/tugu.png"
             alt="tugu"
-            className="h-24 md:h-48 object-contain"
+            className="h-20 md:h-28 object-contain"
           />
         </div>
       </div>
