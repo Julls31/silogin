@@ -35,11 +35,40 @@ function Contact() {
                   "Kirim pertanyaan atau keluhan Anda ke [customercare@cso.silogin.id]. Tim kami akan merespons maksimal 1x24 jam.",
               },
               {
-                icon: "fa fa-chart-simple",
-                title: "Media Sosial",
-                content:
-                  "DM kami di [Instagram, Facebook, atau Twitter].",
-              },
+              icon: "fa fa-chart-simple",
+              title: "Media Sosial",
+              content: (
+                <>
+                  DM kami di{" "}
+                  <a
+                    href="https://www.instagram.com/silogin/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-red-500"
+                  >
+                    Instagram
+                  </a>
+                  ,{" "}
+                  <a
+                    href="http://facebook.com/sl.asuransi/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-red-500"
+                  >
+                    Facebook
+                  </a>
+                  , atau{" "}
+                  <a
+                    href="https://x.com/siloginofficial"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-red-500"
+                  >
+                    Twitter
+                  </a>
+                </>
+              ),
+            },
               {
                 icon: "fa-brands fa-whatsapp",
                 title: "Chat WhatsApp",

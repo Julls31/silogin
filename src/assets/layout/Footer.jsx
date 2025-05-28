@@ -36,7 +36,7 @@ function Footer() {
       <div className="container mx-auto px-4">
         {/* Logo */}
         <div className="flex justify-center mb-8">
-          <img src="/image/siLoginTagline.png" alt="Logo" className="w-48 h-auto" />
+          <img src="/image/siLogin_eKatalog.png" alt="Logo" className="w-48 h-auto" />
         </div>
 
         {/* Footer Content */}
@@ -82,16 +82,16 @@ function Footer() {
           </div>
 
           {/* CUSTOMER CARE */}
-          <div className="lg:ml-8 text-center lg:text-left">
+          <div className="lg:ml-8 text-center md:text-left">
             <h6 className="font-semibold text-red-500 mb-2 text-base md:text-xs lg:text-base">CUSTOMER CARE</h6>
             <ul className="space-y-2 text-base md:text-xs lg:text-base text-gray-700">
-              <li className="flex justify-center lg:justify-start items-center gap-2 hover:text-red-500">
+              <li className="flex justify-center md:justify-start items-center gap-2 hover:text-red-500">
                 <i className="fas fa-phone-alt text-gray-700"></i> 0821 2176 3671
               </li>
-              <li className="flex justify-center lg:justify-start items-center gap-2 hover:text-red-500">
+              <li className="flex justify-center md:justify-start items-center gap-2 hover:text-red-500">
                 <i className="fab fa-whatsapp text-gray-700"></i> 0821 2176 3671
               </li>
-              <li className="flex justify-center lg:justify-start items-center gap-2 hover:text-red-500">
+              <li className="flex justify-center md:justify-start items-center gap-2 hover:text-red-500">
                 <i className="fas fa-envelope text-gray-700"></i> customercare@cso.silogin.id
               </li>
             </ul>
@@ -117,7 +117,7 @@ function Footer() {
           {/* SOCIAL MEDIA */}
           <div className="lg:ml-8">
             <h6 className="font-semibold text-red-500 mb-2 text-base md:text-xs lg:text-base">IKUTI KAMI</h6>
-            <div className="flex justify-center md:justify-start space-x-4">
+            <div className="flex justify-center md:justify-start space-x-4 md:space-x-2 lg:space-x-4">
               <a href="http://facebook.com/sl.asuransi/" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
                 <i className="fab fa-facebook text-2xl"></i>
               </a>

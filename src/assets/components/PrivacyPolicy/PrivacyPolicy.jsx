@@ -18,11 +18,11 @@ function PrivacyPolicy() {
     "11. Cara Menghubungi Kami",
   ];
 
-   const selectOptions = tabs.map((tab, index) => ({
+  const selectOptions = tabs.map((tab, index) => ({
     value: index,
     label: tab,
-   }));
-  
+  }));
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [currentTab]);
@@ -31,26 +31,26 @@ function PrivacyPolicy() {
       <div className="max-w-screen-xl min-h-screen mx-auto 2xl:py-12">
         <div className="container mx-auto">
           {/* Mobile Dropdown using React Select */}
-        <div className="block sm:hidden mb-6">
-          <Select
-            options={selectOptions}
-            value={selectOptions.find((opt) => opt.value === currentTab)}
-            onChange={(selected) => setCurrentTab(selected.value)}
-            className="text-sm"
-            styles={{
-              control: (base) => ({
-                ...base,
-                borderColor: "#d1d5db",
-                padding: "2px",
-              }),
-              option: (base, state) => ({
-                ...base,
-                backgroundColor: state.isFocused ? "#f87171" : "white",
-                color: state.isFocused ? "white" : "black",
-              }),
-            }}
-          />
-        </div>
+          <div className="block sm:hidden mb-6">
+            <Select
+              options={selectOptions}
+              value={selectOptions.find((opt) => opt.value === currentTab)}
+              onChange={(selected) => setCurrentTab(selected.value)}
+              className="text-sm"
+              styles={{
+                control: (base) => ({
+                  ...base,
+                  borderColor: "#d1d5db",
+                  padding: "2px",
+                }),
+                option: (base, state) => ({
+                  ...base,
+                  backgroundColor: state.isFocused ? "#f87171" : "white",
+                  color: state.isFocused ? "white" : "black",
+                }),
+              }}
+            />
+          </div>
           <div className="flex flex-col sm:flex-row">
             {/* Sidebar untuk Desktop */}
             <div className="hidden sm:block sm:w-1/4">
@@ -136,7 +136,7 @@ function PrivacyPolicy() {
                         elektronik. Informasi ini mencakup data yang Anda isi
                         saat melakukan pendaftaran sebagai Penyedia atau Vendor
                         pada platform Kami, termasuk saat mengajukan
-                        perlindungan asuransi untuk transaksi e-catalogue.
+                        perlindungan asuransi untuk transaksi e-katalog.
                         Informasi yang dapat Anda berikan meliputi: nama
                         perusahaan, nama penanggung jawab, Nomor Induk Berusaha
                         (NIB), alamat, alamat email, nomor telepon yang dapat
@@ -181,7 +181,7 @@ function PrivacyPolicy() {
                         <strong>Informasi dari sumber lain.</strong> Kami juga
                         dapat menerima informasi dari pihak ketiga yang bekerja
                         sama dengan Kami, seperti lembaga Pemerintah (L/K/PD),
-                        penyedia sistem e-catalogue, pihak asuransi mitra,
+                        penyedia sistem e-katalog, pihak asuransi mitra,
                         penyedia layanan verifikasi, maupun penyedia pembayaran.
                         Informasi ini digunakan untuk mempercepat proses
                         verifikasi, pemberian perlindungan, dan pemrosesan
@@ -230,7 +230,7 @@ function PrivacyPolicy() {
                           <li>
                             Untuk menyediakan informasi terkait produk asuransi
                             yang disediakan melalui SiLogin, termasuk layanan
-                            perlindungan transaksi e-catalogue, baik dari Kami
+                            perlindungan transaksi e-katalog, baik dari Kami
                             maupun mitra asuransi. Kami dapat menghubungi Anda
                             secara elektronik terkait produk dan layanan
                             tambahan yang relevan dengan kebutuhan bisnis Anda,

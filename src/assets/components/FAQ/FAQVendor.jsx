@@ -9,13 +9,13 @@ function FAQVendor() {
         {
           question: "Apa itu SiLogin Asuransi?",
           answer:
-            "SiLogin Asuransi adalah program asuransi yang dirancang untuk memberikan perlindungan yang cepat dan mudah bagi Penyedia/Vendor dalam bertransaksi atas pembelian barang oleh pemerintah L/K/PD melalui sistem e-catalogue yang terintegrasi dengan aplikasi SiLogin.",
+            "SiLogin Asuransi adalah program asuransi yang dirancang untuk memberikan perlindungan yang cepat dan mudah bagi Penyedia/Vendor dalam bertransaksi atas pembelian barang oleh pemerintah L/K/PD melalui sistem e-katalog yang terintegrasi dengan aplikasi SiLogin.",
         },
         {
           question:
             "Apa yang membuat SiLogin berbeda dari program asuransi lainnya?",
           answer:
-            "SiLogin secara khusus terintegrasi dengan sistem e-catalogue pemerintah, menjadikannya lebih efisien dan otomatis dalam memberikan perlindungan asuransi untuk transaksi tersebut.",
+            "SiLogin secara khusus terintegrasi dengan sistem e-katalog pemerintah, menjadikannya lebih efisien dan otomatis dalam memberikan perlindungan asuransi untuk transaksi tersebut.",
         },
         {
           question: "Apakah SiLogin merupakan perusahaan asuransi?",
@@ -25,7 +25,7 @@ function FAQVendor() {
         {
           question: "Apa keuntungan utama menggunakan SiLogin bagi Vendor?",
           answer:
-            "Keuntungan utamanya adalah kemudahan dan kecepatan dalam mendapatkan perlindungan asuransi untuk setiap transaksi pembelian pemerintah melalui e-catalogue, serta proses klaim yang terstruktur dan transparan.",
+            "Keuntungan utamanya adalah kemudahan dan kecepatan dalam mendapatkan perlindungan asuransi untuk setiap transaksi pembelian pemerintah melalui e-katalog, serta proses klaim yang terstruktur dan transparan.",
         },
         {
           question:
@@ -51,9 +51,9 @@ function FAQVendor() {
         },
         {
           question:
-            "Apakah semua produk yang dibeli melalui e-catalogue otomatis diasuransikan oleh SiLogin?",
+            "Apakah semua produk yang dibeli melalui e-katalog otomatis diasuransikan oleh SiLogin?",
           answer:
-            "Tidak semua produk mungkin otomatis diasuransikan. Vendor perlu memesan kontrak asuransi yang telah disediakan melalui sistem setelah pembelian di e-catalogue.",
+            "Tidak semua produk mungkin otomatis diasuransikan. Vendor perlu memesan kontrak asuransi yang telah disediakan melalui sistem setelah pembelian di e-katalog.",
         },
         {
           question:
@@ -74,7 +74,7 @@ function FAQVendor() {
         {
           question: "Siapa saja yang dapat memiliki akun di website SiLogin?",
           answer:
-            "Semua vendor / Satker L/K/PD dan Penyedia yang sudah melakukan pembelian dan pembayaran barang melalui e-catalogue serta menggunakan asuransi SiLogin dapat memiliki akun.",
+            "Semua vendor / Satker L/K/PD dan Penyedia yang sudah melakukan pembelian dan pembayaran barang melalui e-katalog serta menggunakan asuransi SiLogin dapat memiliki akun.",
         },
         {
           question: "Apa saja fitur utama yang tersedia di website SiLogin?",
@@ -218,27 +218,27 @@ function FAQVendor() {
       questions: [
         {
           question:
-            "Bagaimana cara memesan kontrak asuransi SiLogin setelah pembelian di e-catalogue?",
+            "Bagaimana cara memesan kontrak asuransi SiLogin setelah pembelian di e-katalog?",
           answer:
-            "Setelah pembelian disetujui di e-catalogue, akan ada opsi atau notifikasi untuk memesan kontrak asuransi yang akan diteruskan ke sistem SiLogin.",
+            "Setelah pembelian disetujui di e-katalog, akan ada opsi atau notifikasi untuk memesan kontrak asuransi yang akan diteruskan ke sistem SiLogin.",
         },
         {
           question:
             "Apakah saya bisa memilih jenis asuransi yang berbeda untuk setiap transaksi?",
           answer:
-            "Jenis asuransi yang tersedia mungkin telah ditentukan berdasarkan jenis barang atau ketentuan yang berlaku dalam e-catalogue. Informasi ini akan jelas tertera saat pemesanan kontrak.",
+            "Jenis asuransi yang tersedia mungkin telah ditentukan berdasarkan jenis barang atau ketentuan yang berlaku dalam e-katalog. Informasi ini akan jelas tertera saat pemesanan kontrak.",
         },
         {
           question:
             "Apa informasi yang perlu saya perhatikan saat memesan kontrak asuransi?",
           answer:
-            "Pastikan detail pembelian barang di e-catalogue sesuai dengan informasi yang akan digunakan untuk kontrak asuransi.",
+            "Pastikan detail pembelian barang di e-katalog sesuai dengan informasi yang akan digunakan untuk kontrak asuransi.",
         },
         {
           question:
-            "Apakah ada batas waktu untuk memesan kontrak asuransi setelah transaksi di e-catalogue?",
+            "Apakah ada batas waktu untuk memesan kontrak asuransi setelah transaksi di e-katalog?",
           answer:
-            "Sebaiknya pemesanan kontrak asuransi dilakukan segera setelah transaksi pembelian di e-catalogue disetujui. Informasi mengenai batas waktu jika ada akan tertera pada sistem.",
+            "Sebaiknya pemesanan kontrak asuransi dilakukan segera setelah transaksi pembelian di e-katalog disetujui. Informasi mengenai batas waktu jika ada akan tertera pada sistem.",
         },
         {
           question:
@@ -266,7 +266,7 @@ function FAQVendor() {
         {
           question: "Kapan perlindungan asuransi mulai berlaku?",
           answer:
-            "Perlindungan Asuransi Kargo dimulai saat pengisian tanggal pengiriman pada system e-catalogue. Perlindungan Asuransi MPAR dimulai saat pengisian tanggal BAST pada system e-catalogue.",
+            "Perlindungan Asuransi Kargo dimulai saat pengisian tanggal pengiriman pada system e-katalog. Perlindungan Asuransi MPAR dimulai saat pengisian tanggal BAST pada system e-katalog.",
         },
       ],
     },
@@ -365,7 +365,7 @@ function FAQVendor() {
         {
           question: "Kapan Polis Asuransi MPAR akan dikirimkan kepada saya?",
           answer:
-            "Polis Asuransi akan dikirimkan oleh sistem SiLogin setelah tanggal Berita Acara Serah Terima (BAST) barang dimasukkan ke dalam sistem e-catalogue.",
+            "Polis Asuransi akan dikirimkan oleh sistem SiLogin setelah tanggal Berita Acara Serah Terima (BAST) barang dimasukkan ke dalam sistem e-katalog.",
         },
         {
           question:
@@ -422,7 +422,8 @@ function FAQVendor() {
           answer: "Ukuran maksimal per foto yang dapat diunggah adalah 2MB.",
         },
         {
-          question: "Apa yang terjadi setelah saya Submit form pengajuan klaim?",
+          question:
+            "Apa yang terjadi setelah saya Submit form pengajuan klaim?",
           answer:
             "Anda akan menerima notifikasi email mengenai status pengajuan klaim yang telah Anda kirimkan.",
         },
@@ -460,7 +461,8 @@ function FAQVendor() {
             "Anda akan menerima notifikasi email mengenai penolakan klaim beserta alasannya. Anda dapat mempelajari lebih lanjut mengenai ketentuan penolakan dalam polis asuransi atau menghubungi tim dukungan SiLogin untuk klarifikasi.",
         },
         {
-          question: "Apakah saya bisa mengajukan banding jika klaim saya ditolak?",
+          question:
+            "Apakah saya bisa mengajukan banding jika klaim saya ditolak?",
           answer:
             "Informasi mengenai proses banding jika klaim ditolak akan tercantum dalam polis asuransi atau dapat Anda tanyakan kepada tim dukungan SiLogin.",
         },
@@ -503,7 +505,8 @@ function FAQVendor() {
             "Anda perlu mengisi Nama Bank, Cabang Bank, Nomor Rekening, dan Nama Penerima.",
         },
         {
-          question: "Apa yang terjadi setelah sayaSubmit form persetujuan SKGR?",
+          question:
+            "Apa yang terjadi setelah sayaSubmit form persetujuan SKGR?",
           answer:
             "Anda akan menerima notifikasi email bahwa pengajuan klaim Anda telah selesai dibayarkan berdasarkan data bank yang telah Anda input.",
         },

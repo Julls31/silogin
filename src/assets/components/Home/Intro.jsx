@@ -19,15 +19,15 @@ function Intro() {
   };
 
   const desktopSlides = [
-    "/image/slider/slider1.jpg",
-    "/image/slider/slider2.jpg",
-    "/image/slider/slider3.jpg",
+    "/image/slider/slider1.webp",
+    "/image/slider/slider2.webp",
+    "/image/slider/slider3.webp",
   ];
 
   const mobileSlides = [
-    "/image/slider/slider1mobile.jpg",
-    "/image/slider/slider2mobile.jpg",
-    "/image/slider/slider3mobile.jpg",
+    "/image/slider/slider1mobile.webp",
+    "/image/slider/slider2mobile.webp",
+    "/image/slider/slider3mobile.webp",
   ];
 
   const slides =

@@ -6,7 +6,7 @@ function Policy() {
       <div className="lg:p-8 pt-4 rounded-lg">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600 mt-2">
+          <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600">
             Kebijakan Produk Asuransi
           </h1>
         </div>

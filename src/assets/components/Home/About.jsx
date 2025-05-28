@@ -14,9 +14,9 @@ function About() {
               Apa Itu
             </h1>
             <img
-              src="/image/siLoginTagline.png"
+              src="/image/siLogin_eKatalog.png"
               alt="SiLogin Tagline"
-              className="h-10 w-auto"
+              className="h-10 w-auto mt-4"
             />
             <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600">
               ?
@@ -27,7 +27,7 @@ function About() {
           Program Asuransi yang memberikan perlindungan asuransi dengan cepat
           dan mudah bagi Penyedia / Vendor dalam bertransaksi atas pembelian
           barang oleh Pemerintah (Lembaga / Kementerian / Pemerintah Daerah -
-          LKPD) di e-catalogue melalui sistem aplikasi
+          L/K/PD) di e-katalog melalui sistem aplikasi
           <strong className="text-red-600"> SiLogin</strong>.
         </p>
 
@@ -40,7 +40,7 @@ function About() {
           {/* Image */}
           <div className="flex-shrink-0 p-4 lg:pl-0 md:mr-16 md:ml-10 lg:ml-36">
             <img
-              src="/image/laptop.png"
+              src="/image/laptop.webp"
               alt="SiLogin Tagline"
               className="w-full md:w-60 max-w-md"
             />
@@ -48,9 +48,15 @@ function About() {
 
           {/* Description */}
           <div className="text-gray-700 text-lg leading-relaxed flex-grow px-4 md:px-0 py-4 lg:pt-8">
-            <h3 className="text-xl font-semibold text-center md:text-left mb-4 text-gray-800">
-              Tujuan Asuransi <span className="text-red-600">SiLogin</span>
+            <h3 className="text-xl font-semibold text-center md:text-left mb-4 text-gray-800 flex items-center justify-center md:justify-start gap-3">
+              Tujuan Asuransi
+              <img
+                src="/image/siLogin_eKatalog.png"
+                alt="SiLogin Tagline"
+                className="h-8 w-auto mt-2"
+              />
             </h3>
+
             <ul className="text-gray-600">
               <li className="flex items-start gap-3">
                 <i className="fa-solid fa-check-circle text-red-600 text-xl mt-1"></i>
@@ -70,7 +76,7 @@ function About() {
               </li>
               <li className="flex items-start gap-3">
                 <i className="fa-solid fa-check-circle text-red-600 text-xl mt-1"></i>
-                <span>Optimalisasi e-catalogue</span>
+                <span>Optimalisasi e-katalog</span>
               </li>
             </ul>
           </div>

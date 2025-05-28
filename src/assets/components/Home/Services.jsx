@@ -9,9 +9,19 @@ function Services() {
           <h2 className="text-lg font-semibold text-gray-500 uppercase mb-8 tracking-wide">
             layanan
           </h2>
-          <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600 mt-2">
-            Layanan Yang Ada Pada <span className="text-red-600">SILOGIN</span>
-          </h1>
+          <div className="flex flex-wrap items-center justify-center space-x-3">
+            <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600">
+              Layanan Yang Ada Pada
+            </h1>
+            <img
+              src="/image/siLogin_eKatalog.png"
+              alt="SiLogin Tagline"
+              className="h-10 w-auto mt-4"
+            />
+            <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600">
+              ?
+            </h1>
+          </div>
         </div>
 
         {/* Content Section */}

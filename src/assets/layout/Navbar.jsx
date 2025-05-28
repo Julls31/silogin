@@ -59,7 +59,7 @@ function Navbar() {
     <nav className="bg-base-100 fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         <Link to="/" className="flex items-center">
-          <img src="/image/siLoginTagline.png" alt="logo" className="w-40" />
+          <img src="/image/siLogin_eKatalog.png" alt="logo" className="w-40" />
         </Link>
 
         <button

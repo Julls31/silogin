@@ -9,9 +9,19 @@ function Product() {
           <h2 className="text-lg font-semibold text-gray-500 uppercase mb-8 tracking-wide">
             produk
           </h2>
-          <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600 mt-2">
-            Jenis Produk Yang Ditawarkan <span className="text-red-600">SILOGIN</span>
-          </h1>
+          <div className="flex flex-wrap items-center justify-center space-x-3">
+            <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600">
+              Jenis Produk Yang Ditawarkan
+            </h1>
+            <img
+              src="/image/siLogin_eKatalog.png"
+              alt="SiLogin Tagline"
+              className="h-10 w-auto mt-4"
+            />
+            <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600">
+              ?
+            </h1>
+          </div>
         </div>
 
         {/* Content Section */}
@@ -23,10 +33,9 @@ function Product() {
                 ASURANSI <span className="text-red-600">PENGIRIMAN</span>
               </h3>
               <p className="text-gray-600 mt-4 sm:leading-relaxed sm:text-justify leading-normal text-center md:leading-normal md:text-left">
-                Asuransi ini menjamin risiko kerusakan atau kehilangan
-                terhadap barang selama dalam pengiriman, dari sejak barang itu
-                dikirimkan oleh Penyedia / vendor hingga diterima oleh
-                Pengguna.
+                Asuransi ini menjamin risiko kerusakan atau kehilangan terhadap
+                barang selama dalam pengiriman, dari sejak barang itu dikirimkan
+                oleh Penyedia / vendor hingga diterima oleh Pengguna.
               </p>
             </div>
             <img
@@ -46,10 +55,9 @@ function Product() {
                 </span>
               </h3>
               <p className="text-gray-600 mt-4 md:w-[90%] sm:leading-relaxed sm:text-justify leading-normal text-center md:leading-normal md:text-left">
-                Asuransi ini menjamin kerusakan atau kehilangan terhadap
-                barang yang dipertanggungkan selama masa pertanggungan
-                asuransi atas semua risiko, kecuali yang dikecualikan dalam
-                polis asuransi.
+                Asuransi ini menjamin kerusakan atau kehilangan terhadap barang
+                yang dipertanggungkan selama masa pertanggungan asuransi atas
+                semua risiko, kecuali yang dikecualikan dalam polis asuransi.
               </p>
             </div>
             <img
@@ -60,27 +68,43 @@ function Product() {
           </div>
         </div>
 
+        <div className="text-center mt-16">
+          <div className="flex flex-wrap items-center justify-center space-x-3">
+            <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600">
+              Mitra Konsorsium Penanggung
+            </h1>
+            <img
+              src="/image/siLogin_eKatalog.png"
+              alt="SiLogin Tagline"
+              className="h-10 w-auto mt-4"
+            />
+            <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600">
+              ?
+            </h1>
+          </div>
+        </div>
+
         {/* Logos Section */}
-        <div className="flex flex-wrap justify-center gap-6 items-center mt-8">
+        <div className="flex flex-wrap justify-center gap-6 items-center">
           <img
             src="/image/aswata.png"
             alt="aswata"
-            className="h-24 md:h-48 object-contain"
+            className="h-32 md:h-52 object-contain"
           />
           <img
             src="/image/fpg.png"
             alt="fpg"
-            className="h-24 md:h-48 object-contain"
+            className="h-32 md:h-52 object-contain"
           />
           <img
             src="/image/tripa.png"
             alt="tripa"
-            className="h-24 md:h-36 object-contain"
+            className="h-32 md:h-40 object-contain"
           />
           <img
             src="/image/tugu.png"
             alt="tugu"
-            className="h-20 md:h-28 object-contain"
+            className="h-28 md:h-32 object-contain"
           />
         </div>
       </div>
