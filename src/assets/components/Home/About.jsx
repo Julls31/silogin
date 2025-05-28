@@ -18,9 +18,7 @@ function About() {
               alt="SiLogin Tagline"
               className="h-10 w-auto mt-4"
             />
-            <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600">
-              ?
-            </h1>
+           
           </div>
         </div>
         <p className="text-gray-700 text-lg text-justify md:text-center px-4 md:px-0 py-4 lg:py-0">

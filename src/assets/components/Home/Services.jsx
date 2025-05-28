@@ -18,9 +18,7 @@ function Services() {
               alt="SiLogin Tagline"
               className="h-10 w-auto mt-4"
             />
-            <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600">
-              ?
-            </h1>
+            
           </div>
         </div>
 

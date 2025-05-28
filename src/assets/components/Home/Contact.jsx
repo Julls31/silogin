@@ -15,7 +15,7 @@ function Contact() {
               Kami selalu siap membantu anda!
             </h1>
             <h1 className="text-2xl lg:text-3xl font-semibold text-gray-600 mt-2">
-              Hubungi kami melalui salah satu saluran berikut:
+              Hubungi kami melalui salah satu saluran berikut
             </h1>
           </div>
 
